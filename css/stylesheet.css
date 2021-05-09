@@ -1,0 +1,727 @@
+/* LANDING */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper1 {
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+.wrapper3 {
+  background-image: url("/images/toilet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+.btnspecial {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  background: transparent;
+}
+
+.btn-login:hover,
+.btn-mainhall:hover,
+.btn-register:hover,
+.btn-i:hover,
+.btn-toilet:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-toilet {
+  border-radius: 10px !important;
+  background: transparent;
+  position: absolute;
+  width: 85px;
+  height: 130px;
+  left: 70px;
+  top: 575px;
+}
+
+.btn-login {
+  border-radius: 10px !important;
+  background: transparent;
+  position: absolute;
+  width: 154px;
+  height: 47px;
+  left: 273px;
+  top: 454px;
+}
+
+.btn-mainhall {
+  border-radius: 10px !important;
+  border: none;
+  outline: none;
+  background: transparent;
+  position: absolute;
+  width: 294px;
+  height: 63px;
+  left: 811px;
+  top: 273px;
+}
+.btn-register {
+  border-radius: 10px !important;
+  border: none;
+  outline: none;
+  background: transparent;
+  position: absolute;
+  width: 153px;
+  height: 46px;
+  left: 1494px;
+  top: 455px;
+}
+
+.btn-i {
+  border-radius: 50px !important;
+  border: none;
+  outline: none;
+  background: transparent;
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  left: 1797px;
+  top: 596px;
+}
+
+/* CSS LOGIN & REGISTER */
+
+.text-white {
+  color: #fff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: Louis George Café !important;
+  font-style: normal;
+  font-weight: bold;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+label {
+  font-size: 24px !important;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.logo {
+  width: 477px;
+  height: 127px;
+  margin-left: 125px;
+}
+
+.button {
+  margin-top: 26px !important;
+  border-radius: 12px !important;
+  line-height: 2;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  margin-left: 15px;
+}
+
+.register {
+  margin-left: 26px;
+}
+
+.btn2 {
+  background-color: #1b3b80;
+  border: none;
+  width: 437.54px;
+  height: 66px;
+  left: 1339.6px;
+  top: 902px;
+  font-size: larger;
+}
+
+.btn2:hover {
+  background-color: #4663a1;
+}
+
+.belowlogo {
+  width: 547px;
+  margin-left: 126px;
+  margin-top: 21px;
+  font-family: Louis George Café;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.belowlogo2 {
+  width: 165px;
+  font-family: Louis George Café;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  margin-left: 135px;
+  margin-top: 4px;
+}
+
+/* POP UP LOGIN */
+.wrapper1 {
+  display: flex;
+  transition: 0.5s;
+}
+
+.wrapper1 .btn-wrapper {
+  position: absolute;
+}
+
+.wrapper1#blur.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.popuplogin {
+  background-image: url("../images/Asset\ 17.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  font-family: Louis George Café !important;
+  width: 1920px;
+  height: 479px;
+  left: 0px;
+  top: 601px;
+  min-height: 390px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+#popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* LOGIN */
+
+.title {
+  color: white;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  line-height: 41px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.formwrapper {
+  background-image: url("../images/Asset\ 16.png");
+  background-size: cover !important;
+  margin-left: 788px;
+  margin-top: 53px;
+  padding-top: 40px;
+  padding-left: 60px;
+  width: 1078px;
+  height: 426px;
+  position: absolute;
+  padding-right: 40px;
+}
+
+.inlineform {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.form-control1 {
+  line-height: 2.7;
+  border-radius: 12px !important;
+  vertical-align: middle;
+  width: 436.55px;
+  height: 66px;
+  left: 866px;
+  top: 806px;
+  padding-left: 5px;
+}
+
+.form-control2 {
+  line-height: 2.7;
+  border-radius: 12px !important;
+  vertical-align: middle;
+  width: 436.55px;
+  height: 66px;
+  left: 1340px;
+  top: 805px;
+  padding-left: 5px;
+}
+
+.set {
+  width: 436.55px;
+}
+
+.pw-set {
+  margin-left: 26px;
+}
+
+.logowrapper {
+  margin-top: 63px;
+}
+
+.forgot {
+  color: white;
+  padding-top: 15px;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.inlineform-buttons {
+  margin-top: 7px;
+}
+
+.btn1 {
+  background-color: #fdb501;
+  border: none;
+  width: 436.55px;
+  height: 66px;
+  left: 866.1px;
+  top: 902px;
+  font-size: larger;
+}
+
+.btn1:hover {
+  background-color: #f5cd68;
+}
+
+/* POP UP REGISTER */
+
+.popupregister {
+  background-image: url("../images/RGST.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  font-family: Louis George Café !important;
+  width: 1922px;
+  height: 914px;
+  left: 0px;
+  top: 166px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+#popupregis {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popupregis.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* REGISTER */
+
+.title2 {
+  color: white;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 41px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.formwrapper2 {
+  background-image: url("../images/Asset\ 6.png");
+  background-size: cover !important;
+  margin-left: 789px;
+  margin-top: 70px;
+  padding-top: 40px;
+  padding-left: 60px;
+  width: 1078px;
+  height: 844px;
+  position: absolute;
+  padding-right: 40px;
+}
+
+.inlineform2 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.inlineform3 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.inlineform4 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.inlineform5 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.form-control3 {
+  line-height: 2.7;
+  border-radius: 12px !important;
+  vertical-align: middle;
+  width: 436.55px;
+  height: 66px;
+  left: 866px;
+  top: 806px;
+  padding-left: 5px;
+}
+
+.set1 {
+  width: 436.55px;
+}
+
+.set2 {
+  margin-left: 26px;
+}
+
+.logowrapper2 {
+  margin-top: 75px;
+}
+
+.inlineform2-buttons {
+  margin-top: 10px;
+  margin-left: -2px;
+  height: 67px;
+}
+
+.formcontrol {
+  width: 438px;
+  height: 67px;
+  border-radius: 10px;
+}
+
+/* POP UP FORGOT PASSWORD */
+
+.popupforgot {
+  background-image: url("../images/FRGT.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  font-family: Louis George Café !important;
+  width: 1920px;
+  height: 565px;
+  left: 0px;
+  top: 515px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+#popupforgot {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popupforgot.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* FORGOT PASSWORD */
+
+.title3 {
+  color: white;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 41px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.formwrapper3 {
+  background-image: url("../images/Asset\ 3.png");
+  background-size: cover !important;
+  margin-left: 788px;
+  margin-top: 55px;
+  padding-top: 40px;
+  padding-left: 60px;
+  width: 1078px;
+  height: 510px;
+  position: absolute;
+  padding-right: 40px;
+}
+
+.logowrapper3 {
+  margin-top: 72px;
+}
+
+.inlineform3-buttons {
+  margin-top: 220px;
+  margin-left: -525px;
+  height: 67px;
+}
+
+.reset {
+  margin-left: 90px;
+}
+
+.btn3 {
+  background-color: #fdb501;
+  border: none;
+  width: 898px;
+  height: 66px;
+  font-size: x-large;
+}
+
+.form-control4 {
+  width: 898px;
+  height: 66px;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.inlineform6 {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: -70px;
+}
+
+.set3 {
+  margin-left: 90px;
+  margin-top: -15px;
+  font-size: x-small;
+  font-style: italic;
+}
+
+/* POP UP INFO */
+
+.popupinfo {
+  background-image: url("../images/INFO.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  font-family: Louis George Café !important;
+  width: 1920px;
+  height: 565px;
+  left: -1px;
+  top: 515px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+#popupinfo {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popupinfo.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* INFO */
+
+.btn-faq {
+  background-image: url("../images/Asset\ 19.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  width: 908px;
+  height: 140px;
+  margin-left: 10px;
+  margin-top: 35px;
+}
+
+.btn-list {
+  background-image: url("../images/Asset\ 20.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  width: 908px;
+  height: 140px;
+  margin-left: 10px;
+  margin-top: 48px;
+}
+
+/* INFO FAQ */
+
+.popupfaq {
+  background-image: url("../images/FAQ.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  font-family: Louis George Café !important;
+  width: 1920px;
+  height: 767px;
+  left: -1px;
+  top: 313px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+.formwrapper4 {
+  background-image: url("../images/Asset\ 8.png");
+  background-size: cover !important;
+  margin-left: 789px;
+  margin-top: 52px;
+  padding-top: 40px;
+  padding-left: 60px;
+  width: 1078px;
+  height: 715px;
+  position: absolute;
+  padding-right: 40px;
+}
+
+.title4 {
+  color: white;
+  font-style: italic;
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: larger;
+}
+
+.title5 {
+  color: white;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 41px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.inlineform8 p {
+  width: 820px;
+  margin-left: 15px;
+  margin-top: 60px;
+  font-size: 23px;
+  font-weight: lighter;
+  color: white;
+  line-height: 1px;
+}
+
+#popupfaq {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popupfaq.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* POP UP LIST OF COMPANIES */
+
+.popupcompany {
+  background-image: url("../images/RGST.png");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  font-family: Louis George Café !important;
+  width: 1922px;
+  height: 914px;
+  left: 0px;
+  top: 166px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+
+.inlineform9 {
+  padding-top: 22px;
+  padding-left: 13px;
+}
+
+.img-l4,
+.img-l5,
+.img-l6 {
+  margin-top: 110px;
+}
+
+.img-l1,
+.img-l4 {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+}
+
+.img-l2,
+.img-l5 {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  margin-left: 330px;
+}
+
+.img-l3,
+.img-l6 {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  margin-left: 660px;
+}
+
+#popupcom {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popupcom.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* LANDING PAGE SUDAH LOGIN) */
+.wrapper2 {
+  background-image: url(../images/landing2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+}
+
+.wrapper2#blur.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}

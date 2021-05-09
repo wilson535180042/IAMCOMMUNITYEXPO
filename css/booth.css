@@ -1,0 +1,464 @@
+html,
+body {
+  width: 1920px;
+  height: 1080px;
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1080px;
+  background-size: 1920px;
+  position: absolute;
+}
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+.atas {
+  left: 372px;
+  top: 141px;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.bawah {
+  left: 370px;
+  top: 328px;
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.home {
+  left: 40px;
+  top: 40px;
+  height: 90px;
+  position: absolute;
+}
+
+.blur {
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1080px;
+  background-size: 1920px;
+  position: absolute;
+}
+
+.btnspecial {
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.blur {
+  display: flex;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.blur#blur.active {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup,
+#popupdescri15,
+#popupdescri16,
+#popupdescri17,
+#popupdescri18,
+#popupdescri19,
+#popupdescri20,
+#popupdescri21,
+#popupdescri22,
+#popupdescri23,
+#popupdescri24,
+#popupdescri2,
+#popupdescri3,
+#popupregis {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active,
+#popupdescri.active,
+#popupdescri15.active,
+#popupdescri16.active,
+#popupdescri17.active,
+#popupdescri18.active,
+#popupdescri19.active,
+#popupdescri20.active,
+#popupdescri21.active,
+#popupdescri22.active,
+#popupdescri23.active,
+#popupdescri24.active,
+#popupdescri2.active,
+#popupdescri3.active,
+#popupregis.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  bottom: 0px;
+}
+
+.inlineform-buttons2 {
+  margin-top: 7px;
+  position: absolute;
+  left: 788px;
+  top: 600px;
+  min-height: max-content;
+  overflow-y: hidden;
+}
+
+.inlineform-buttons {
+  margin-top: 7px;
+  position: absolute;
+  left: 790px;
+  top: 900px;
+  min-height: max-content;
+  overflow-y: hidden;
+  min-width: 100%;
+}
+
+#alert2 {
+  display: none;
+}
+
+#alert2.active {
+  display: inherit;
+  transition: 0.5s;
+}
+
+.botond {
+  position: relative;
+  background-color: #fdb501;
+  border: none;
+  width: 600px;
+  height: 70px;
+  left: 84px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+}
+
+.botond2 {
+  position: relative;
+  background-color: #fdb501;
+  border: none;
+  width: 280px;
+  height: 70px;
+  border: none;
+  outline: none;
+  margin-left: 120px;
+  border-radius: 12px;
+}
+
+.boton {
+  position: absolute;
+  background-color: #fdb501;
+  border: none;
+  width: 388px;
+  height: 100px;
+  left: 133px;
+  top: 380px;
+  border:none; 
+  outline: none;
+}
+
+.boton2 {
+  position: absolute;
+  background-color: #fdb501;
+  border: none;
+  width: 902px;
+  height: 100px;
+  left: 857.9px;
+  top: 720px;
+  border: none;
+  outline: none;
+}
+
+.boton3 {
+  position: absolute;
+  background-color: #fdb501;
+  border: none;
+  width: 902px;
+  height: 100px;
+  left: 857.9px;
+  top: 850px;
+  border: none;
+  outline: none;
+}
+
+.botonc {
+  position: absolute;
+  background-color: #fdb501;
+  border: none;
+  width: 200px;
+  height: 200px;
+  left: 872px;
+  top: 810px;
+  border: none;
+  outline: none;
+}
+
+.botonc2 {
+  position: absolute;
+  background-color: #fdb501;
+  border: none;
+  width: 200px;
+  height: 200px;
+  left: 1092px;
+  top: 810px;
+  border: none;
+  outline: none;
+}
+
+.botonc3 {
+  position: absolute;
+  background-color: #fdb501;
+  border: none;
+  width: 200px;
+  height: 200px;
+  left: 1312px;
+  top: 810px;
+  border: none;
+  outline: none;
+}
+
+.boton3:hover {
+  background-color: #f5cd68;
+}
+
+.tonbo {
+  border-radius: 12px;
+}
+
+.tonbo h1 {
+  margin-top: 10px;
+  padding-right: 50px;
+  color: white;
+  text-align: right;
+  font-size: 30px;
+  -webkit-text-stroke: 1px white;
+  margin-left: 15px;
+  font-family: Louis George Café;
+  letter-spacing: 1px;
+}
+
+.tonbo p {
+  border-radius: 12px;
+  padding-right: 50px;
+  color: white;
+  text-align: right;
+  font-size: 18px;
+  margin-left: 15px;
+  font-family: Louis George Café;
+  letter-spacing: 1px;
+}
+
+.tonboc {
+  border-radius: 12px;
+}
+
+.tonboc h1 {
+  margin-top: 8px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  -webkit-text-stroke: 1px white;
+  font-family: Louis George Café;
+  letter-spacing: 1px;
+}
+
+.tonbod p {
+  -webkit-text-stroke: 1px white;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: Louis George Café;
+  letter-spacing: 1px;
+}
+
+.biodata {
+  margin-top: 7px;
+  position: absolute;
+}
+
+.biodata p {
+  -webkit-text-stroke: 2px white;
+  width: 500px;
+  position: absolute;
+  color: white;
+  left: 872px;
+  top: 496px;
+  font-size: 36px;
+  font-family: Louis George Café;
+  letter-spacing: 1px;
+}
+
+.paragraf {
+  margin-top: 7px;
+  position: absolute;
+}
+
+.paragrafs{
+  margin-top: 7px;
+  position: absolute;
+}
+
+.paragrafs p{
+  width: 1600px;
+  position: absolute;
+  text-align: justify;
+  color: white;
+  left: 160px;
+  top: 400px;
+  font-size: 24px;
+  font-family: Louis George Café;
+  line-height: 25pt;
+}
+
+.co-name {
+  margin-top: 7px;
+  position: absolute;
+}
+
+.co-name h1 {
+  left: 124px;
+  top: 605px;
+  width: 900px;
+  position: absolute;
+  color: white;
+  font-size: 44px;
+  font-family: Louis George Café;
+}
+
+.co-name h2 {
+  left: 124px;
+  top: 662px;
+  width: 900px;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-family: Louis George Café;
+}
+
+.biodatac {
+  margin-top: 7px;
+  position: absolute;
+}
+
+.biodatac p {
+  -webkit-text-stroke: 2px white;
+  width: 500px;
+  position: absolute;
+  color: white;
+  left: 872px;
+  top: 690px;
+  font-size: 36px;
+  font-family: Louis George Café;
+  letter-spacing: 1px;
+}
+
+.co-namec {
+  margin-top: 7px;
+  position: absolute;
+}
+
+.co-namec h1 {
+  left: 124px;
+  top: 795px;
+  width: 900px;
+  position: absolute;
+  color: white;
+  font-size: 44px;
+  font-family: Louis George Café;
+}
+
+.co-namec h2 {
+  left: 124px;
+  top: 852px;
+  width: 900px;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-family: Louis George Café;
+}
+
+.img1 {
+  position: absolute;
+  left: 0px;
+  top: 137px;
+}
+
+.img2 {
+  position : absolute;
+  left: 77px;
+  top: 326px;
+}
+
+.img3 {
+  position: absolute;
+  left: 109px;
+  top: 174px;
+}
+
+.img4 {
+  left: 0px;
+  top: 601px;
+  position: absolute;
+}
+
+.img5 {
+  left: 790px;
+  top: 653px;
+  position: absolute;
+}
+
+.img6 {
+  left: 114.5px;
+  top: 660px;
+  position: absolute;
+}
+
+.newmember {
+  position: absolute;
+  left: 872px;
+  top: 975px;
+}
+
+.newmember p {
+  color: white;
+  font-size: 18px;
+  font-family: Louis George Café;
+}
+
+.kalimat {
+  position: absolute;
+  font-family: Louis George Café;
+  font-size: 24px;
+  color: white;
+  left: 872px;
+  top: 760px;
+}
+
+.kalimat p {
+  width: 1000px;
+  position: absolute;
+}

@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.blur {
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 1080px;
+    background-size: 1920px;
+    position: absolute;
+  }
+
+.btnspecial{
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    background:transparent;
+    border:none;  
+    outline: none;
+}
+
+.btn-b1 {
+    position: absolute;
+    top: 70%;
+    left: 13.3%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 23.6%;
+    height: 27.7%;
+    background:transparent;
+    border:none;  
+    outline: none;
+}
+
+.btn-b2 {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 23.6%;
+    height: 27.7%;
+    background:transparent; 
+    border:none; 
+    outline: none;
+}
+
+.btn-b3 {
+    position: absolute;
+    top: 70%;
+    left: 62.6%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 23.6%;
+    height: 27.7%;
+    background:transparent; 
+    border:none; 
+    outline: none;
+}
+
+.btn-b4 {
+    position: absolute;
+    top: 70%;
+    left: 87.1%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 23.6%;
+    height: 27.7%;
+    background:transparent; 
+    border:none; 
+    outline: none;
+}
+
+.home{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 40px;
+    top: 40px;
+    background:transparent; 
+    border:none; 
+    outline: none;
+}
+
+.next{
+    position: absolute;
+    width: 77px;
+    height: 78px;
+    left: 1826px;
+    top: 451px;
+    background:transparent; 
+    border:none; 
+    outline: none;
+    
+}
+
+.previous{
+    position: absolute;
+    width: 77px;
+    height: 78px;
+    left: 23px;
+    top: 451px;
+    background:transparent; 
+    border:none; 
+    outline: none;
+}
+
+.blur{
+    display: flex;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.blur#blur.active {
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup1.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup2.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup3 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup3.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup4 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup4.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.img1 {
+    position: absolute;
+    left: 0px;
+    top: 346px;
+}
+
+.img2 {
+    position : absolute;
+    left: 788px;
+    top: 399px;
+}
+
+.img3 {
+    position: absolute;
+    left: 124px;
+    top: 420px;
+}
+
+.inlineform-buttons {
+    margin-top: 7px;
+    position: absolute;
+}
+
+.boton {
+    position: absolute;
+    background-color: #fdb501;
+    border: none;
+    width: 438px;
+    height: 67px;
+    left: 857.9px;
+    top: 840px;
+    border:none; 
+    outline: none;
+}
+
+.boton:hover {
+    background-color: #f5cd68;
+}
+
+.tonbo {
+    margin-top: 26px;
+    border-radius: 12px;
+    line-height: 2;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    -webkit-text-stroke: 1px white;
+    margin-left: 15px;
+    font-family: Louis George Café;
+    letter-spacing: 1px;
+}
+
+.biodata{
+    margin-top: 7px;
+    position: absolute;
+}
+
+.biodata p{
+    -webkit-text-stroke: 2px white;
+    width: 500px;
+    position: absolute;
+    color: white;
+    left: 872px;
+    top: 453px;
+    font-size: 36px;
+    font-family: Louis George Café;
+    letter-spacing: 1px;
+}
+
+.paragraf{
+    margin-top: 7px;
+    position: absolute;
+}
+
+.paragraf p{
+    width: 900px;
+    position: absolute;
+    color: white;
+    left: 872px;
+    top: 517px;
+    font-size: 24px;
+    font-family: Louis George Café;
+    line-height: 25pt;
+}
+
+.co-name{
+    margin-top: 7px;
+    position: absolute;
+}
+
+.co-name h1{
+    left: 124px;
+    top: 565px;
+    width: 900px;
+    position: absolute;
+    color: white;
+    font-size: 44px;
+    font-family: Louis George Café;
+}
+
+.co-name h2{
+    left: 124px;
+    top: 622px;
+    width: 900px;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-family: Louis George Café;
+}
+
+.img4{
+    left: 124px;
+    top: 685px;
+    position: absolute;
+}
+
+.img5{
+    left: 117.5px;
+    top: 795px;
+    position: absolute;
+}
+
+.img6{
+    left: 114.5px;
+    top: 845px;
+    position: absolute;
+}
+
+.co-name h3{
+    left: 180px;
+    top: 685px;
+    width: 500px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-family: Louis George Café;
+}
+
+.co-name h4{
+    left: 180px;
+    top: 795px;
+    width: 900px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-family: Louis George Café;
+}
+
+.co-name h5{
+    left: 180px;
+    top: 845px;
+    width: 900px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-family: Louis George Café;
+}

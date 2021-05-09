@@ -1,0 +1,588 @@
+@font-face {
+  font-family: "Louis George Café";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Louis George Café"), url(/fonts/LGC/Louis\ George\ Cafe.ttf);
+}
+@font-face {
+  font-family: "Louis George Café";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Louis George Café"),
+    url("/fonts/LGC/Louis\ George\ Cafe\ Italic.ttf");
+}
+@font-face {
+  font-family: "Louis George Café";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Louis George Café"),
+    url("/fonts/LGC/Louis\ George\ Café\ Bold\ 700.ttf");
+}
+@font-face {
+  font-family: "Louis George Café";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Louis George Café"),
+    url("/fonts/LGC/Louis\ George\ Cafe\ Bold\ Italic.ttf.ttf");
+}
+@font-face {
+  font-family: "Louis George Café Light";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Louis George Café Light"),
+    url("/fonts/LGC/Louis\ George\ Cafe\ Light.ttf");
+}
+@font-face {
+  font-family: "Louis George Café Light";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Louis George Café Light"),
+    url("/fonts/LGC/Louis\ George\ Cafe\ Light\ Italic.ttf");
+}
+
+body {
+  background-image: url("/contohexpo/images/backgroundlogin.png");
+  width: 1920px !important;
+  height: 1080px !important;
+  background-size: 1920px !important;
+  font-family: "Louis George Café", sans-serif !important;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Louis George Café", sans-serif !important;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.popuplogin {
+  background-image: url("/img/Asset\ 17.png");
+  background-size: cover !important;
+  width: 100%;
+  min-height: 390px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-weight: 700 !important;
+  font-size: 30px !important;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.formwrapper {
+  background-image: url("/img/Asset\ 16.png");
+  background-size: cover !important;
+  min-height: 350px;
+  margin-left: 720px;
+  padding-top: 40px;
+  padding-left: 60px;
+  min-width: 1150px;
+  margin-top: 40px;
+  position: absolute;
+  padding-right: 40px;
+}
+
+.inlineform {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  line-height: 2.7;
+  border-radius: 12px !important;
+  min-width: 392px;
+  vertical-align: middle;
+}
+
+.set {
+  width: 145%;
+}
+
+.pw {
+  margin-left: 26px;
+}
+
+label {
+  font-size: 20px !important;
+}
+
+.leftwrapper {
+  min-width: 700px;
+  position: absolute;
+  text-align: center;
+  margin-top: -65px;
+}
+
+.button {
+  margin-top: 26px !important;
+  border-radius: 12px !important;
+  line-height: 2;
+  color: white;
+  min-width: 392px;
+  text-align: center;
+  font-weight: 900;
+  width: 145%;
+  height: 145%;
+}
+
+.button:hover {
+  color: black !important;
+}
+
+.register {
+  margin-left: 26px;
+}
+
+.forgot {
+  color: white;
+  margin-left: 2px;
+  padding-top: 17px;
+}
+
+.buttons {
+  margin-top: -5px;
+}
+
+.btn1 {
+  background-color: #fdb501;
+  border: none;
+}
+
+.btn1:hover {
+  background-color: #f5cd68;
+}
+
+.btn2 {
+  background-color: #1b3b80;
+  border: none;
+}
+
+.btn2:hover {
+  background-color: #4663a1;
+}
+
+.belowlogo {
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 20px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  margin-bottom: 0px;
+}
+
+.belowlogo2 {
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 1px;
+}
+
+
+
+
+
+/*CSS LOGIN*/
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: Louis George Café !important;
+    font-style: normal;
+    font-weight: bold;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.popuplogin {
+    background-image: url("/img/Asset\ 17.png");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    font-family: Louis George Café !important;
+    width: 100%;
+    height: 479px;
+    left: 0px;
+    top: 601px;
+    min-height: 390px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+}
+
+.title {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: white;
+    line-height: 41px;
+    margin-left: 15px;
+}
+
+.formwrapper {
+    background-image: url("/img/Asset\ 16.png");
+    background-size: cover !important;
+    margin-left: 789px;
+    margin-top: 53px;
+    margin-right: 55px;
+    padding-top: 40px;
+    padding-left: 60px;
+    width: 1078px;
+    height: 426px;
+    position: absolute;
+    padding-right: 40px;
+}
+
+.inlineform {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.form-control1{
+    line-height: 2.7;
+    border-radius: 12px !important;
+    vertical-align: middle;
+    width: 436.55px;
+    height: 66px;
+    left: 866px;
+    top: 806px;
+}
+
+.form-control2{
+    line-height: 2.7;
+    border-radius: 12px !important;
+    vertical-align: middle;
+    width: 436.55px;
+    height: 66px;
+    left: 1340px;
+    top: 805px;
+}
+
+.set {
+    width: 436.55px;
+}
+
+.pw-set {
+    margin-left: 26px;
+}
+
+label {
+    font-size: 24px !important;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.logowrapper {
+    margin-top: 63px;
+}
+
+.logo {
+    width: 477px;
+    height: 127px;
+    margin-left: 125px;
+}
+
+.button {
+    margin-top: 26px !important;
+    border-radius: 12px !important;
+    line-height: 2;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.register {
+    margin-left: 26px;
+}
+
+.forgot {
+    color: white;
+    padding-top: 15px;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.inlineform-buttons {
+    margin-top: 7px;
+}
+
+.btn1 {
+    background-color: #fdb501;
+    border: none;
+    width: 436.55px;
+    height: 66px;
+    left: 866.1px;
+    top: 902px;
+    font-size: larger;
+}
+
+.btn1:hover {
+    background-color: #f5cd68;
+}
+
+.btn2 {
+    background-color: #1b3b80;
+    border: none;
+    width: 437.54px;
+    height: 66px;
+    left: 1339.6px;
+    top: 902px;
+    font-size: larger;
+}
+
+.btn2:hover {
+    background-color: #4663a1;
+}
+
+.belowlogo {
+    width: 547px;
+    margin-left: 126px;
+    margin-top: 21px;
+    font-family: Louis George Café;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.belowlogo2 {
+    width: 165px;
+    font-family: Louis George Café;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    margin-left: 135px;
+    margin-top: 4px;
+}*/
+
+/*POP UP*/
+
+/*.modal-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    display: none;
+
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+}*/
+
+/*CSS REGISTER*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: Louis George Café !important;
+    font-style: normal;
+    font-weight: bold;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.popupregister {
+    background-image: url("/img/Asset\ 5.png");
+    background-size: cover !important;  
+    background-repeat: no-repeat;
+    font-family: Louis George Café !important;
+    width: 1922px;
+    height: 914px;
+    left: -1px;
+    top: 166px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+}
+
+.title {
+    color: white;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 41px;
+    margin-left: 15px;
+}
+
+.formwrapper2 {
+    background-image: url("/img/Asset\ 6.png");
+    background-size: cover !important;
+    margin-left: 789px;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-left: 60px;
+    width: 1078px;
+    height: 844px;
+    position: absolute;
+    padding-right: 40px;
+}
+
+.inlineform2 {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.inlineform3 {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.inlineform4 {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.inlineform5 {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.form-control1{
+    line-height: 2.7;
+    border-radius: 12px !important;
+    vertical-align: middle;
+    width: 436.55px;
+    height: 66px;
+    left: 866px;
+    top: 806px;
+}
+
+.set1 {
+    width: 436.55px;
+}
+
+.set2 {
+    margin-left: 26px;
+}
+
+label {
+    font-size: 24px !important;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.logowrapper2 {
+    margin-top: 63px;
+}
+
+.logo {
+    width: 477px;
+    height: 127px;
+    margin-left: 125px;
+}
+
+.button {
+    margin-top: 26px !important;
+    border-radius: 12px !important;
+    line-height: 2;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.register {
+    margin-left: 26px;
+}
+
+.forgot {
+    color: white;
+    padding-top: 15px;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.inlineform2-buttons {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.btn1 {
+    background-color: #fdb501;
+    border: none;
+    width: 436.55px;
+    height: 66px;
+    left: 866.1px;
+    top: 902px;
+    font-size: larger;
+}
+
+.btn1:hover {
+    background-color: #f5cd68;
+}
+
+.btn2 {
+    background-color: #1b3b80;
+    border: none;
+    width: 437.54px;
+    height: 66px;
+    left: 1339.6px;
+    top: 902px;
+    font-size: larger;
+}
+
+.btn2:hover {
+    background-color: #4663a1;
+}
+
+.belowlogo {
+    width: 547px;
+    margin-left: 126px;
+    margin-top: 21px;
+    font-family: Louis George Café;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.belowlogo2 {
+    width: 165px;
+    font-family: Louis George Café;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    margin-left: 135px;
+    margin-top: 4px;
+}
