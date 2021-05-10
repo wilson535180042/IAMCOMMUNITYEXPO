@@ -1,6 +1,6 @@
 <?php require_once "db.php";
 if (!$user->isLogged()) {
-  header("location: http://localhost/contohexpo/");
+  header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 
 $bookmark = $user->getBookmark($_SESSION['userid']);
@@ -16,7 +16,7 @@ if (isset($_POST['sendforgot'])) {
     $_SESSION["tempmsg"] = "Gagal reset password";
     $_SESSION["temptype"] = "false";
   }
-  header("location: http://localhost/contohexpo/landinglogin.php");
+  header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO/landinglogin.php");
   die;
 }
 

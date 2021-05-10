@@ -1,14 +1,14 @@
 <?php
 require_once 'db.php';
 if ($user->isLogged()) {
-    header("location: http://localhost/contohexpo/index.php");
+    header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 if (!isset($_GET['hc'])) {
-    header("location: http://localhost/contohexpo/login.php");
+    header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 } else {
     if ($user->checkReset($_GET['hc']) == false) {
         die;
-        header("location: http://localhost/contohexpo/login.php");
+        header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
         exit;
     } else {
         $email = $user->checkReset($_GET['hc']);
@@ -19,7 +19,7 @@ if (isset($_POST['send'])) {
         $check = $user->resetPassword($_POST['password1'], $email);
         if ($check == true) {
             $_SESSION['tempmsg'] = "Berhasil ubah password";
-            header("location: http://localhost/contohexpo/login.php");
+            header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
             exit;
         } else {
             $error = "Gagal ubah password";

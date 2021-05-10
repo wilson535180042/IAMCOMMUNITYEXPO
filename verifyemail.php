@@ -11,4 +11,4 @@ if (isset($_GET['hc'])) {
 } else {
     $_SESSION['failed'] = "Verifikasi gagal.";
 }
-header("location: http://localhost/contohexpo/");
+header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");

@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
 if (!$user->isLogged()) {
-  header("location: http://localhost/contohexpo/");
+  header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 $currentUser = $user->getProfile();
 
@@ -25,6 +25,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
+
 <head>
   <title>Main Hall</title>
   <meta charset="utf-8">
@@ -32,6 +33,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
   <link href="css/landing.css" rel="stylesheet" type="text/css">
   <script defer src="js/script.js"></script>
 </head>
+
 <body>
   <div class="blur" id="blur" style="background-image: url('/images/MH3.jpg')">
     <button class="home" onclick="document.location='landinglogin.html'"></button>
@@ -54,10 +56,12 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
       <h3>Yummy Corp HQ.<br>
-        Foresta Business Loft 2, Units 3-5.<br> 
+        Foresta Business Loft 2, Units 3-5.<br>
         Tangerang, Banten 15339</h3>
       <h4>cs@yummybox.id</h4>
-      <a href="https://www.yummybox.id/"><h5>www.yummybox.id</h5></a>
+      <a href="https://www.yummybox.id/">
+        <h5>www.yummybox.id</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
@@ -67,11 +71,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
   <div id="popup2">
@@ -89,7 +93,9 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         RT 7/RW 3, Grogol Petamburan,<br>
         Jakarta Barat 11470</h3>
       <h4>Info@Smileconsultingindonesia.com</h4>
-      <a href="https://smileconsultingindonesia.com/"><h5>www.smileconsultingindonesia.com</h5></a>
+      <a href="https://smileconsultingindonesia.com/">
+        <h5>www.smileconsultingindonesia.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
@@ -99,11 +105,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
   <div id="popup3">
@@ -131,11 +137,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
   <div id="popup4">
@@ -163,12 +169,13 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
 </body>
+
 </html>

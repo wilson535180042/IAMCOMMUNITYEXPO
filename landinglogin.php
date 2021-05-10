@@ -1,6 +1,6 @@
 <?php require_once "db.php";
 if (!$user->isLogged()) {
-    header("location: http://localhost/contohexpo/");
+    header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 
 if (isset($_SESSION['tempmsg']) && isset($_SESSION['temptype'])) {

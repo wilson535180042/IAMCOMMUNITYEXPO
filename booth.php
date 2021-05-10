@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
 if (!$user->isLogged()) {
-  header("location: http://localhost/contohexpo/");
+  header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 if (isset($_POST['save'])) {
   $user->bookmark($_SESSION['userid'], intval($_POST['idloker']));
@@ -121,11 +121,11 @@ $profile = $user->getProfile();
           </button>
           <div class="paragrafs">
             <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-            in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-            property development model, from land acquisition and/or sourcing, to design and development, to project management,
-            sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-            offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-            quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+              in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+              property development model, from land acquisition and/or sourcing, to design and development, to project management,
+              sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+              offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+              quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
           </div>
           <?php if ($lok['bookmarked'] == false) : ?>
             <button type="submit" class="botond2 tonbod" name="save">

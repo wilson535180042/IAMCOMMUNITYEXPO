@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
 if (!$user->isLogged()) {
-  header("location: http://localhost/contohexpo/");
+  header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 $currentUser = $user->getProfile();
 
@@ -25,6 +25,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
+
 <head>
   <title>Main Hall</title>
   <meta charset="utf-8">
@@ -32,6 +33,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
   <link href="css/landing.css" rel="stylesheet" type="text/css">
   <script defer src="js/script.js"></script>
 </head>
+
 <body>
   <div class="blur" id="blur" style="background-image: url('/images/MH2.jpg')">
     <button class="home" onclick="document.location='landinglogin.html'"></button>
@@ -57,7 +59,9 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         Jl. Let. Jend. S. Parman Kav. 28<br>
         Jakarta 11470 Indonesia</h3>
       <h4>-</h4>
-      <a href="https://agungpodomoroland.com/"><h5>www.agungpodomoroland.com</h5></a>
+      <a href="https://agungpodomoroland.com/">
+        <h5>www.agungpodomoroland.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
@@ -67,11 +71,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
   <div id="popup2">
@@ -85,11 +89,13 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img4" src="img/LOC.png">
       <img class="img5" src="img/MAIL.png">
       <img class="img6" src="img/WEB.png">
-      <h3>MNC Tower, Jl. Kebon Sirih,<br> 
-        RT.15/RW.7, Kb. Sirih, Kec. Menteng,<br> 
+      <h3>MNC Tower, Jl. Kebon Sirih,<br>
+        RT.15/RW.7, Kb. Sirih, Kec. Menteng,<br>
         Kota Jakarta Pusat, 10340</h3>
       <h4>-</h4>
-      <a href="https://kapalapiglobal.com/santos/?lang=id"><h5>Website Santos Jaya Abadi</h5></a>
+      <a href="https://kapalapiglobal.com/santos/?lang=id">
+        <h5>Website Santos Jaya Abadi</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
@@ -99,7 +105,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf" style="font-size: 5px">
       <p>We aim to achieve the sustainable market leadership position by delivering excellent value to our customers through continuous innovation, world-class processes, financial strength, and great people.<br><br>
-        PT Santos Jaya Abadi is one of the biggest coffee roasting company in South East Asia. from 80 years experience of roasting coffee, tasting coffee, and finding the best coffee from Indonesia as well as other parts of the world. We are proud to offer some of the world finest whole beans coffee available worldwide.<br> 
+        PT Santos Jaya Abadi is one of the biggest coffee roasting company in South East Asia. from 80 years experience of roasting coffee, tasting coffee, and finding the best coffee from Indonesia as well as other parts of the world. We are proud to offer some of the world finest whole beans coffee available worldwide.<br>
       </p>
     </div>
   </div>
@@ -114,11 +120,13 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img4" src="img/LOC.png">
       <img class="img5" src="img/MAIL.png">
       <img class="img6" src="img/WEB.png">
-      <h3>Plaza 89 lantai 12 suite 22-23,<br> 
+      <h3>Plaza 89 lantai 12 suite 22-23,<br>
         Jl. H. R. Rasuna Said No.6, Kuningan,<br>
         South Jakarta City, Jakarta 12940</h3>
       <h4>-</h4>
-      <a href="https://pigijo.com/"><h5>www.pigijo.com</h5></a>
+      <a href="https://pigijo.com/">
+        <h5>www.pigijo.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
@@ -128,11 +136,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
   <div id="popup4">
@@ -149,7 +157,9 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <h3>Jakarta,<br>
         Indonesia</h3>
       <h4>info@csgindonesia.com</h4>
-      <a href="https://csgindonesia.com/"><h5>www.csgindonesia.com</h5></a>
+      <a href="https://csgindonesia.com/">
+        <h5>www.csgindonesia.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
@@ -159,12 +169,13 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
 </body>
+
 </html>

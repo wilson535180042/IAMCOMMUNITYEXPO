@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
 if ($user->isLogged()) {
-    header("location: http://localhost/contohexpo/landinglogin.php");
+    header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO/landinglogin.php");
 }
 if (isset($_POST['regist'])) {
     $email = $_POST['email'];
@@ -25,7 +25,7 @@ if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     if ($user->login($email, $password)) {
-        header("location: http://localhost/contohexpo/afterlogin.php");
+        header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO/afterlogin.php");
     } else {
         $error = $user->getError();
         $ertype = "login";
