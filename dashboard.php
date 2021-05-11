@@ -37,7 +37,6 @@ if (isset($_POST['sendforgot'])) {
       <form method='POST'>
         <button type='submit' name='sendforgot' class="boton tonbo">C H A N G E &nbsp;P A S S W O R D</button>
       </form>
-      <a href="landinglogin.php"><button type="submit" class="boton2 tonbo">C H A N G E &nbsp;P R O F I L E</button></a>
     </div>
     <div class="rectangle2">
       <div class="rectangle4">

@@ -6,8 +6,8 @@
 
 .rectangle {
   position: absolute;
-  width: 910px;
-  height: 310px;
+    width: 910px;
+    height: 150px;
   left: 50px;
   top: 40px;
   background-color: white;
