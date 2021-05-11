@@ -1,16 +1,23 @@
 <?php
 require_once "db.php";
+
 if (!$user->isLogged()) {
   header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 if (isset($_POST['save'])) {
-  $user->bookmark($_SESSION['userid'], intval($_POST['idloker']));
+  $bm = $user->bookmark($_SESSION['userid'], intval($_POST['idloker']));
+}
+
+if (isset($_POST['remove'])) {
+  $user->removeBookmark($_SESSION['userid'], intval($_POST['idloker']));
 }
 
 $loker = $user->getloker($_SESSION['userid']);
 $profile = $user->getProfile();
-?>
 
+$error = $user->getError();
+
+?>
 
 <!DOCTYPE html>
 
@@ -25,6 +32,19 @@ $profile = $user->getProfile();
 </head>
 
 <body>
+  <?php if ($error != NULL) :
+    if ($error == "Maaf anda sudah mencapai limit bookmark (3)") :
+  ?>
+      <div class="alert alert-warning">
+        <strong><?= $error; ?></strong>
+      </div>
+    <?php else : ?>
+      <div class="alert alert-success">
+        <strong><?= $error; ?></strong>
+      </div>
+  <?php endif;
+  endif; ?>
+
   <?php if ($profile['role'] == "Premium") :
     $to = "toggle(3)" ?>
 
@@ -50,10 +70,10 @@ $profile = $user->getProfile();
       <p>J O B &nbsp;V A C A N C I E S</p>
     </div>
     <div class="inlineform-buttons">
-        <button type="button" class="boton tonbo" onclick="toggle(10)">
-          <h1>I T &nbsp;D I V I S I O N</h1>
-          <p>front end developer</p>
-        </button>
+      <button type="button" class="boton tonbo" onclick="toggle(10)">
+        <h1>I T &nbsp;D I V I S I O N</h1>
+        <p>front end developer</p>
+      </button>
     </div>
 
 
@@ -89,42 +109,48 @@ $profile = $user->getProfile();
   </div>
 
 
-  <?php $j = 15;
-  foreach ($loker[2]['loker'] as $lok) :
-  ?>
-    <div id=<?= "popupdescri$j"; ?>>
-      <button class="btnspecial" id="special" onclick="puggle()"></button>
-      <img class="img1" src="images/JV.png">
-      <img class="img2" src="images/JV2.png">
-      <img class="img3" src="images/LOGO.png">
-       
-      <div class="biodata">
-        <p>J O B &nbsp;D E S C R I P T I O N</p>
-      </div>
-      <div class="inlineform-buttons">
-        <form method='post' method='post'>
-          <input type='hidden' name="idloker" value=<?= $lok['no'] ?>>
-          <button type="submit" class="botond tonbod" onclick="toggle(13)">
-            <p>A P P L Y</p>
-          </button>
-          <?php if ($lok['bookmarked'] == false) : ?>
-            <button type="submit" class="botond2 tonbod" name="save">
-              <p>S A V E</p>
-            </button>
-          <?php endif; ?>
-        </form>
-      </div>
-      <div class="paragrafs">
-        <p><?= $lok['keterangan']; ?></p>
-      </div>
-      <div class="newmember">
-        <p>New Member? Click Here!</p>
-      </div>
+  <div id=<?= "popupdescri"; ?>>
+    <?php $p = 1;
+    $k = 1; ?>
+    <button class="btnspecial" id="special" onclick="puggle()"></button>
+    <img class="img1" src="images/JV.png">
+    <img class="img2" src="images/JV2.png">
+    <img class="img3" src="images/LOGO.png">
+    <div class="biodata">
+      <p>J O B &nbsp;D E S C R I P T I O N</p>
     </div>
-  <?php
-    $j++;
-  endforeach; ?>
+    <div class="inlineform-buttons">
+      <form method='post' method='post'>
+        <input type='hidden' name="idloker" value=<?= $k ?>>
+        <button type="submit" class="botond tonbod" onclick="toggle(13)">
+          <p>A P P L Y</p>
+        </button>
+        <div class="paragrafs">
+          <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
+            in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+            property development model, from land acquisition and/or sourcing, to design and development, to project management,
+            sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+            offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+            quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        </div>
+        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
+          <button type="submit" class="botond2 tonbod" name="save">
+            <p>S A V E</p>
+          </button>
+        <?php else :
+        ?>
+          <button type="submit" class="botond2 tonbod" name="remove">
+            <p>R E M O V E </p>
+          </button>
+        <?php endif; ?>
+      </form>
+    </div>
 
 </body>
 
 </html>
+<script>
+  if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+  }
+</script>
