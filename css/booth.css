@@ -78,6 +78,7 @@ body {
 }
 
 #popup,
+#popupdescri,
 #popupdescri15,
 #popupdescri16,
 #popupdescri17,
@@ -163,7 +164,7 @@ body {
   height: 100px;
   left: 133px;
   top: 380px;
-  border:none; 
+  border: none;
   outline: none;
 }
 
@@ -281,12 +282,12 @@ body {
   letter-spacing: 1px;
 }
 
-.biodata{
+.biodata {
   margin-top: 7px;
   position: absolute;
 }
 
-.biodata p{
+.biodata p {
   -webkit-text-stroke: 2px white;
   width: 500px;
   position: absolute;
@@ -303,12 +304,12 @@ body {
   position: absolute;
 }
 
-.paragrafs{
+.paragrafs {
   margin-top: 7px;
   position: absolute;
 }
 
-.paragrafs p{
+.paragrafs p {
   width: 1600px;
   position: absolute;
   text-align: justify;
@@ -394,7 +395,7 @@ body {
 }
 
 .img2 {
-  position : absolute;
+  position: absolute;
   left: 77px;
   top: 326px;
 }
