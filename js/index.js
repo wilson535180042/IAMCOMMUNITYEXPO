@@ -64,6 +64,12 @@ function toggle(bnum) {
         var popupregis = document.getElementById('popupinfo');
         popupregis.classList.remove('active');
     }
+    if (bnum == 10) {
+        var blur = document.getElementById('popupdescri');
+        blur.classList.toggle('active');
+        var popupregis = document.getElementById('popup');
+        popupregis.classList.remove('active');
+    }
     if(bnum == 99){
         var blur = document.getElementById('alert2');
         blur.classList.toggle('active');
