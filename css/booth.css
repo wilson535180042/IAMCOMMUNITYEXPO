@@ -133,26 +133,28 @@ body {
 }
 
 .botond {
-  position: relative;
+  position: absolute;
   background-color: #fdb501;
   border: none;
   width: 600px;
   height: 70px;
-  left: 84px;
-  border: none;
+  left: 872px;
+  top: 890px;
+  border:none; 
   outline: none;
   border-radius: 12px;
 }
 
 .botond2 {
-  position: relative;
+  position: absolute;
   background-color: #fdb501;
   border: none;
-  width: 280px;
+  width: 260px;
   height: 70px;
-  border: none;
+  left: 1500px;
+  top: 890px;
+  border:none; 
   outline: none;
-  margin-left: 120px;
   border-radius: 12px;
 }
 

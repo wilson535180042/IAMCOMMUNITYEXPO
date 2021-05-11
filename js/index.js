@@ -110,7 +110,14 @@ function toggle(bnum) {
         var popupregis = document.getElementById('popupdescri3');
         popupregis.classList.remove('active');
     }
-        
+    
+    if (bnum == 14) {
+        x=14;
+        var blur = document.getElementById('popup');
+        blur.classList.toggle('active');
+        var popupregis = document.getElementById('popupcom');
+        popupregis.classList.remove('active');
+    }
 }
 
 function puggle() {

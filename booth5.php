@@ -97,10 +97,7 @@ $profile = $user->getProfile();
       <img class="img1" src="images/JV.png">
       <img class="img2" src="images/JV2.png">
       <img class="img3" src="images/LOGO.png">
-      <div class="co-name">
-        <h1><b>Welcome to Career Expo</b></h1>
-        <h2>by I AM Community</h2>
-      </div>
+       
       <div class="biodata">
         <p>J O B &nbsp;D E S C R I P T I O N</p>
       </div>
