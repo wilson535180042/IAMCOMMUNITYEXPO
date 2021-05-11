@@ -64,10 +64,6 @@ function toggle(bnum) {
         var popupregis = document.getElementById('popupinfo');
         popupregis.classList.remove('active');
     }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     if(bnum == 99){
         var blur = document.getElementById('alert2');
         blur.classList.toggle('active');
@@ -108,10 +104,7 @@ function toggle(bnum) {
         var popupregis = document.getElementById('popupdescri3');
         popupregis.classList.remove('active');
     }
-<<<<<<< Updated upstream
-        
-=======
-     
+    
     if (bnum == 14) {
         x=14;
         var blur = document.getElementById('popup');
@@ -119,7 +112,6 @@ function toggle(bnum) {
         var popupregis = document.getElementById('popupcom');
         popupregis.classList.remove('active');
     }
->>>>>>> Stashed changes
 }
 
 function puggle() {
