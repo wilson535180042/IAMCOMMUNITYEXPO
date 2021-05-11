@@ -717,7 +717,7 @@ class Auth
         $sql3 = "SELECT * FROM `bookmark` WHERE `no_user`= ?;";
         $prep3 = $this->db->prepare($sql3);
         $prep3->execute([$nouser]);
-        $res3 = $prep3->fetch(PDO::FETCH_ASSOC);
+        $res3 = $prep3->fetchAll(PDO::FETCH_ASSOC);
         if (sizeof($res3) < 3) {
             try {
                 $sql = "INSERT INTO `bookmark` (`no`, `no_user`, `no_loker`) VALUES (NULL, ?, ?);";
@@ -742,10 +742,9 @@ class Auth
             $prep = $this->db->prepare($sql);
             $prep->execute([$nouser]);
             $res = $prep->fetchAll(PDO::FETCH_ASSOC);
-
             foreach ($res as $row) {
                 $noloker = $row['no_loker'];
-                $sql2 = "SELECT `loker`.`no`,`loker`.`divisi`,`loker`.`keterangan`,`loker`.`no_perusahaan`,`perusahaan`.`nama_perusahaan` FROM `loker` INNER JOIN `perusahaan` ON `loker`.`no_perusahaan`=`perusahaan`.`no` WHERE `loker`.`no` = ?";
+                $sql2 = "SELECT `loker`.`no`,`loker`.`divisi`,`loker`.`no_perusahaan`,`perusahaan`.`nama_perusahaan`,`perusahaan`.`filefoto` FROM `loker` INNER JOIN `perusahaan` ON `loker`.`no_perusahaan`=`perusahaan`.`no` WHERE `loker`.`no` = ?";
                 $prep2 = $this->db->prepare($sql2);
                 $prep2->execute([$noloker]);
                 $res2 = $prep2->fetch(PDO::FETCH_ASSOC);
@@ -1318,7 +1317,7 @@ class Auth
         try {
             $sql = "DELETE FROM `bookmark` WHERE `no_user`=? AND `no_loker`=?";
             $this->db->prepare($sql)->execute([$nouser, $noloker]);
-            $this->errormsg = "Berhasil hapus bookmark";
+            $this->errormsg = "Berhasil Hapus Bookmark";
             return true;
         } catch (PDOException $error) {
             $this->errormsg = $error->getMessage();

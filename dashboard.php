@@ -2,7 +2,6 @@
 if (!$user->isLogged()) {
   header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
-
 $bookmark = $user->getBookmark($_SESSION['userid']);
 
 $currentUser = $user->getProfile();
@@ -42,20 +41,27 @@ if (isset($_POST['sendforgot'])) {
     </div>
     <div class="rectangle2">
       <div class="rectangle4">
-        <h1><?= sizeof($bookmark); ?></h1>
+        <h1><?php if ($bookmark != null) {
+              echo (sizeof($bookmark));
+            } else {
+              echo "0";
+            } ?></h1>
         <p>Jobs you're interested in!</p>
       </div>
       <div class="inlineform-buttons">
 
-        <?php foreach ($bookmark as $book) : ?>
-          <a href="booth.php">
-            <button type="button" class="botons1 tonboo">
-              <h1><?= $book['divisi']; ?></h1>
-              <p>front end developer</p>
-              <img class="imgbut" src="images/APL.png">
-            </button></a>
+        <?php
+        if ($bookmark != null) {
+          foreach ($bookmark as $book) : ?>
+            <a href="booth.php">
+              <button type="button" class="botons1 tonboo">
+                <h1><?= $book['divisi']; ?></h1>
+                <p>front end developer</p>
+                <img class="imgbut" src=<?= "images/" . $book['filefoto']; ?>>
+              </button></a>
 
-        <?php endforeach; ?>
+        <?php endforeach;
+        } ?>
       </div>
     </div>
     <div class="rectangle3">

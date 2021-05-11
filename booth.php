@@ -1,10 +1,15 @@
 <?php
 require_once "db.php";
+
 if (!$user->isLogged()) {
   header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 if (isset($_POST['save'])) {
   $bm = $user->bookmark($_SESSION['userid'], intval($_POST['idloker']));
+}
+
+if (isset($_POST['remove'])) {
+  $user->removeBookmark($_SESSION['userid'], intval($_POST['idloker']));
 }
 
 $loker = $user->getloker($_SESSION['userid']);
@@ -13,7 +18,6 @@ $profile = $user->getProfile();
 $error = $user->getError();
 
 ?>
-
 
 <!DOCTYPE html>
 
@@ -28,6 +32,11 @@ $error = $user->getError();
 </head>
 
 <body>
+  <?php if ($error != NULL) : ?>
+    <div class="alert alert-success">
+      <strong><?= $error; ?></strong>
+    </div>
+  <?php endif; ?>
   <?php if ($profile['role'] == "Premium") :
     $to = "toggle(3)" ?>
 
@@ -98,8 +107,8 @@ $error = $user->getError();
 
 
   <div id=<?= "popupdescri"; ?>>
-    <?php $p = 2;
-    $k = 3; ?>
+    <?php $p = 1;
+    $k = 1; ?>
     <button class="btnspecial" id="special" onclick="puggle()"></button>
     <img class="img1" src="images/JV.png">
     <img class="img2" src="images/JV2.png">
@@ -125,10 +134,16 @@ $error = $user->getError();
             offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
             quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
         </div>
-        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) ?>
-        <button type="submit" class="botond2 tonbod" name="save">
-          <p>S A V E</p>
-        </button>
+        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
+          <button type="submit" class="botond2 tonbod" name="save">
+            <p>S A V E</p>
+          </button>
+        <?php else :
+        ?>
+          <button type="submit" class="botond2 tonbod" name="remove">
+            <p>R E M O V E </p>
+          </button>
+        <?php endif; ?>
       </form>
     </div>
     <div class="paragrafs">
@@ -143,3 +158,8 @@ $error = $user->getError();
 </body>
 
 </html>
+<script>
+  if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+  }
+</script>
