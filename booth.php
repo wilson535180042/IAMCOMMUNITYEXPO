@@ -14,7 +14,6 @@ $error = $user->getError();
 
 ?>
 
-
 <!DOCTYPE html>
 
 <head>
@@ -97,30 +96,6 @@ $error = $user->getError();
   </div>
 
 
-<<<<<<< Updated upstream
-  <div id=<?= "popupdescri"; ?>>
-    <?php $p = 2;
-    $k = 3; ?>
-    <button class="btnspecial" id="special" onclick="puggle()"></button>
-    <img class="img1" src="images/JV.png">
-    <img class="img2" src="images/JV2.png">
-    <img class="img3" src="images/LOGO.png">
-    <div class="co-name">
-      <h1><b>Welcome to Career Expo</b></h1>
-      <h2>by I AM Community</h2>
-    </div>
-    <div class="biodata">
-      <p>J O B &nbsp;D E S C R I P T I O N</p>
-    </div>
-    <div class="inlineform-buttons">
-      <form method='post' method='post'>
-        <input type='hidden' name="idloker" value=<?= $k ?>>
-        <button type="submit" class="botond tonbod" onclick="toggle(13)">
-          <p>A P P L Y</p>
-        </button>
-        <div class="paragrafs">
-          <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-=======
   <?php $j = 15;
   foreach ($loker[2]['loker'] as $lok) :
   ?>
@@ -140,7 +115,6 @@ $error = $user->getError();
           </button>
           <div class="paragrafs">
             <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
->>>>>>> Stashed changes
             in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
             property development model, from land acquisition and/or sourcing, to design and development, to project management,
             sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
