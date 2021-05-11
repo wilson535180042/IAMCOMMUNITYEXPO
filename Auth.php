@@ -158,7 +158,7 @@ class Auth
     {
         $mail = new PHPMailer(true);
         $urlcode = urlencode($code);
-        $url = "http://" . $_SERVER['SERVER_NAME'] . "/contohexpo/verifyemail.php?hc=" . $urlcode;
+        $url = "http://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO`/verifyemail.php?hc=" . $urlcode;
 
         try {
             $mail->SMTPDebug = 0;
@@ -713,13 +713,23 @@ class Auth
     {
         $nouser = intval($userid);
         $noloker = intval($lokerid);
-        try {
-            $sql = "INSERT INTO `bookmark` (`no`, `no_user`, `no_loker`) VALUES (NULL, ?, ?);";
-            $this->db->prepare($sql)->execute([$nouser, $noloker]);
-            $this->errormsg = "Bookmark Sukses";
-            return true;
-        } catch (PDOException $error) {
-            $this->errormsg = $error->getMessage();
+
+        $sql3 = "SELECT * FROM `bookmark` WHERE `no_user`= ?;";
+        $prep3 = $this->db->prepare($sql3);
+        $prep3->execute([$nouser]);
+        $res3 = $prep3->fetch(PDO::FETCH_ASSOC);
+        if (sizeof($res3) < 3) {
+            try {
+                $sql = "INSERT INTO `bookmark` (`no`, `no_user`, `no_loker`) VALUES (NULL, ?, ?);";
+                $this->db->prepare($sql)->execute([$nouser, $noloker]);
+                $this->errormsg = "Bookmark Sukses";
+                return true;
+            } catch (PDOException $error) {
+                $this->errormsg = $error->getMessage();
+                return false;
+            }
+        } else {
+            $this->errormsg = "Maaf anda sudah mencapai limit bookmark (3)";
             return false;
         }
     }
@@ -756,7 +766,7 @@ class Auth
     {
         $mail = new PHPMailer(true);
         $urlcode = urlencode($kode);
-        $url = "http://" . $_SERVER['SERVER_NAME'] . "/contohexpo/resetpassword.php?hc=" . $urlcode;
+        $url = "http://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO/resetpassword.php?hc=" . $urlcode;
 
         try {
             $mail->SMTPDebug = false;

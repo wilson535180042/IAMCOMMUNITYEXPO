@@ -35,10 +35,10 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 </head>
 
 <body>
-  <div class="blur" id="blur" style="background-image: url('/images/MH3.jpg')">
-    <button class="home" onclick="document.location='landinglogin.html'"></button>
+  <div class="blur" id="blur" style="background-image: url('images/MH3.jpg')">
+    <button class="home" onclick="document.location='landinglogin.php'"></button>
     <button class="next"></button>
-    <button class="previous" onclick="document.location='mainhall2.html'"></button>
+    <button class="previous" onclick="document.location='mainhall2.php'"></button>
     <button class="btn-b1" onclick="toggle(1)"></button>
     <button class="btn-b2" onclick="toggle(2)"></button>
     <button class="btn-b3" onclick="toggle(3)"></button>
@@ -67,7 +67,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth9.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth9.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
@@ -101,7 +101,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth10.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth10.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
@@ -133,7 +133,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth3.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth3.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
@@ -165,7 +165,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth4.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth4.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager

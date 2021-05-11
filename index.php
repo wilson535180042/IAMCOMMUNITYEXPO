@@ -66,6 +66,7 @@ if (isset($_POST['forgot'])) {
     <link rel="stylesheet" type="text/css" href="css/bootstrap-cut.css">
     <!--pop up javascript-->
     <script defer src="js/index.js"></script>
+    <script defer src="js/checkpw.js"></script>
 </head>
 
 <body>
@@ -93,13 +94,14 @@ if (isset($_POST['forgot'])) {
         </div>
     <?php } ?>
 
-    <?php if (isset($SESSION['success'])) {
+    <?php if (isset($_SESSION['success'])) {
 
     ?>
         <div class="alert alert-success">
-            <strong>Verifikasi berhasil! </strong> <?= $SESSION['success']; ?>
+            <strong>Verifikasi berhasil! </strong> <?= $_SESSION['success']; ?>
         </div>
-    <?php } ?>
+    <?php unset($_SESSION['success']);
+    } ?>
 
     <?php if (isset($ertype) && $ertype == "forgot") {
 
@@ -118,13 +120,14 @@ if (isset($_POST['forgot'])) {
     <?php } ?>
 
 
-    <?php if (isset($SESSION['failed'])) {
+    <?php if (isset($_SESSION['failed'])) {
 
     ?>
         <div class="alert alert-danger">
-            <strong>Verifikasi gagal! </strong> <?= $SESSION['failed']; ?>
+            <strong>Verifikasi gagal! </strong> <?= $_SESSION['failed']; ?>
         </div>
-    <?php } ?>
+    <?php unset($_SESSION['failed']);
+    } ?>
     <!--LANDING-->
     <div class="wrapper1" id="blur">
         <div class="btn-wrapper">
@@ -150,11 +153,11 @@ if (isset($_POST['forgot'])) {
                     <div class="inlineform">
                         <div class="set">
                             <label class="text-white mt-3 mb-3" for="email">Email</label>
-                            <input class="form-control1" id="email" type="email" name="email">
+                            <input class="form-control1" id="email" type="email" name="email" required>
                         </div>
                         <div class='pw-set'>
                             <label class="text-white mt-3 mb-3" for="password">Password</label>
-                            <input class="form-control2" id="password" type="password" name="password">
+                            <input class="form-control2" id="password" type="password" name="password" required>
                         </div>
                     </div>
                     <div class="inlineform-buttons">
@@ -180,31 +183,31 @@ if (isset($_POST['forgot'])) {
             </div>
             <div class="formwrapper2">
                 <h4 class="title2"><strong>R E G I S T R A T I O N</strong></h4>
-                <form class="formregister" method="POST">
+                <form class="formregister" method="POST" onsubmit="return check4()">
                     <div class="inlineform2">
-                        <div class="set1">
+                        <div class="set1 mailset">
                             <label class="text-white mt-3 mb-3" for="email">Email</label>
-                            <input class="form-control3" id="email" type="email" name="email">
+                            <input class="form-control3" id="email" type="email" name="email" required>
                         </div>
                         <div class='set2'>
                             <label class="text-white mt-3 mb-3" for="password">Password</label>
-                            <input class="form-control3" id="password" type="password" name="password">
+                            <input class="form-control3" id="password" type="password" name="password" required pattern=".{6,}" title="Input minimal 8 karakter">
                         </div>
                     </div>
                     <div class="inlineform3">
                         <div class="set1">
                             <label class="text-white mt-3 mb-3" for="firstname">First Name</label>
-                            <input class="form-control3" id="firstname" type="text" name="first">
+                            <input class="form-control3" id="firstname" type="text" name="first" required>
                         </div>
                         <div class="set2">
                             <label class="text-white mt-3 mb-3" for="lastname">Last Name</label>
-                            <input class="form-control3" id="lastname" type="text" name="last">
+                            <input class="form-control3" id="lastname" type="text" name="last" required>
                         </div>
                     </div>
                     <div class="inlineform4">
                         <div class="set1">
                             <label class="text-white mt-3 mb-3" for="phonenumber">Phone Number</label>
-                            <input class="form-control3" id="phonenumber" type="number" name="phone">
+                            <input class="form-control3" id="phonenumber" type="number" name="phone" required pattern="[0-9]{3}" title="Mohon hanya masukkan angka">
                         </div>
                         <div class="set2">
                             <label class="text-white mt-3 mb-3">Gender</label>

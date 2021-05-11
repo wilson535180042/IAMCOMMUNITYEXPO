@@ -36,7 +36,7 @@ $profile = $user->getProfile();
   <?php endif; ?>
   <div class="blur" id="blur" style="background-image: url('images/B4.jpg')">
 
-    <button class="atas" onclick=<?= $to; ?>></button>
+    <button class="atas" onclick=toggle(3)></button>
 
     <button type='button' class="bawah" onclick="toggle(1)"></button>
     <a href="mainhall.php"><img class="home" src="images/Asset 1.png"></a>

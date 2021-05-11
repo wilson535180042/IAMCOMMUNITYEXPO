@@ -35,10 +35,10 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 </head>
 
 <body>
-  <div class="blur" id="blur" style="background-image: url('/images/MH2.jpg')">
-    <button class="home" onclick="document.location='landinglogin.html'"></button>
-    <button class="next" onclick="document.location='mainhall3.html'"></button>
-    <button class="previous" onclick="document.location='mainhall.html'"></button>
+  <div class="blur" id="blur" style="background-image: url('images/MH2.jpg')">
+    <button class="home" onclick="document.location='landinglogin.php'"></button>
+    <button class="next" onclick="document.location='mainhall3.php'"></button>
+    <button class="previous" onclick="document.location='mainhall.php'"></button>
     <button class="btn-b1" onclick="toggle(1)"></button>
     <button class="btn-b2" onclick="toggle(2)"></button>
     <button class="btn-b3" onclick="toggle(3)"></button>
@@ -67,7 +67,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth5.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth5.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
@@ -101,7 +101,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth6.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth6.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf" style="font-size: 5px">
       <p>We aim to achieve the sustainable market leadership position by delivering excellent value to our customers through continuous innovation, world-class processes, financial strength, and great people.<br><br>
@@ -132,7 +132,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth7.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth7.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
@@ -165,7 +165,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth8.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth8.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager

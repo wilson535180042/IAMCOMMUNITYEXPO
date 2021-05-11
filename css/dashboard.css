@@ -34,11 +34,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
-<<<<<<< Updated upstream
-.foto{
-    width: 460px;
-    height: 330.5px;
-=======
 .rectangle4 {
   position: absolute;
   width: 300px;
@@ -52,7 +47,6 @@
 .foto {
   width: 460px;
   height: 330.5px;
->>>>>>> Stashed changes
 }
 
 .boton {
@@ -88,7 +82,7 @@
 }
 
 .boton3 {
-  background-image: url("/images/RUMAH.png");
+  background-image: url("../images/RUMAH.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
@@ -257,7 +251,7 @@
 }
 
 .foto-profile {
-  background-image: url("/images/PROPIL.png");
+  background-image: url("../images/PROPIL.png");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;

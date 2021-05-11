@@ -4,11 +4,14 @@ if (!$user->isLogged()) {
   header("Location: https://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO");
 }
 if (isset($_POST['save'])) {
-  $user->bookmark($_SESSION['userid'], intval($_POST['idloker']));
+  $bm = $user->bookmark($_SESSION['userid'], intval($_POST['idloker']));
 }
 
 $loker = $user->getloker($_SESSION['userid']);
 $profile = $user->getProfile();
+
+$error = $user->getError();
+
 ?>
 
 
@@ -34,9 +37,15 @@ $profile = $user->getProfile();
       <strong>Maaf fitur ini hanya untuk user premium</strong>
     </div>
   <?php endif; ?>
+  <?php
+  if ($error != NULL) {
+  ?>
+    <div class="alert alert-danger" id="alert2">
+      <strong><?= $error; ?></strong>
+    </div>
+  <?php } ?>
   <div class="blur" id="blur" style="background-image: url('images/B1.jpg')">
-
-    <button class="atas" onclick=<?= $to; ?>></button>
+    <button class="atas" onclick=toggle(3)></button>
 
     <button type='button' class="bawah" onclick="toggle(1)"></button>
     <a href="mainhall.php"><img class="home" src="images/Asset 1.png"></a>
@@ -63,6 +72,7 @@ $profile = $user->getProfile();
         $i++;
       endforeach;
       ?>
+
     </div>
 
 
