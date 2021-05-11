@@ -49,20 +49,11 @@ $profile = $user->getProfile();
     <div class="biodata">
       <p>J O B &nbsp;V A C A N C I E S</p>
     </div>
-    <div class="inlineform-buttons2">
-      <?php
-      $i = 15;
-      foreach ($loker[2]['loker'] as $lo) :
-      ?>
-
-        <button type="button" class="boton tonbo" onclick="toggle(<?= $i; ?>)">
-          <h1><?= $lo['divisi']; ?></h1>
+    <div class="inlineform-buttons">
+        <button type="button" class="boton tonbo" onclick="toggle(10)">
+          <h1>I T &nbsp;D I V I S I O N</h1>
           <p>front end developer</p>
         </button>
-      <?php
-        $i++;
-      endforeach;
-      ?>
     </div>
 
 

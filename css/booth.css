@@ -117,23 +117,9 @@ body {
   bottom: 0px;
 }
 
-.inlineform-buttons2 {
-  margin-top: 7px;
-  position: absolute;
-  left: 788px;
-  top: 600px;
-  min-height: max-content;
-  overflow-y: hidden;
-}
-
 .inlineform-buttons {
   margin-top: 7px;
   position: absolute;
-  left: 790px;
-  top: 900px;
-  min-height: max-content;
-  overflow-y: hidden;
-  min-width: 100%;
 }
 
 #alert2 {
@@ -295,18 +281,18 @@ body {
   letter-spacing: 1px;
 }
 
-.biodata {
+.biodata{
   margin-top: 7px;
   position: absolute;
 }
 
-.biodata p {
+.biodata p{
   -webkit-text-stroke: 2px white;
   width: 500px;
   position: absolute;
   color: white;
-  left: 872px;
-  top: 496px;
+  left: 1375px;
+  top: 210px;
   font-size: 36px;
   font-family: Louis George Café;
   letter-spacing: 1px;
