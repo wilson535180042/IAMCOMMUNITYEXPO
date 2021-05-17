@@ -31,7 +31,7 @@
                 <div class="inlineform6">
                     <div class="set1">
                         <label class="text-white mt-3 mb-3" for="password">New Password</label>
-                        <input class="form-control4" id="password" type="password">
+                        <input class="form-control4" id="password" title="Input minimal 8 karakter" required pattern=".{8,}" type="password">
                     </div>
                     <div class="inlineform3-buttons">
                         <form>
