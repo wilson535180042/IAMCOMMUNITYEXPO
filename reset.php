@@ -1,3 +1,30 @@
+<?php
+require_once 'db.php';
+if (!isset($_GET['hc'])) {
+    header("Location: https://" . $_SERVER['SERVER_NAME']);
+} else {
+    if ($user->checkReset($_GET['hc']) == false) {
+        die;
+        header("Location: https://" . $_SERVER['SERVER_NAME']);
+        exit;
+    } else {
+        $email = $user->checkReset($_GET['hc']);
+    }
+}
+
+if (isset($_POST['send'])) {
+    $check = $user->resetPassword($_POST['password'], $email);
+    if ($check == true) {
+        $_SESSION['tempmsg'] = "Berhasil ubah password";
+        header("Location: https://" . $_SERVER['SERVER_NAME']);
+        exit;
+    } else {
+        $error = "Gagal ubah password";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +41,7 @@
     <!--pop up javascript-->
     <script defer src="js/index.js"></script>
 </head>
+
 <body>
     <!--LANDING-->
     <a href="landinglogin.html"><button class="btnspecial" id="special" style="border: 0; outline: 0;"></button></a>
@@ -35,7 +63,7 @@
                     </div>
                     <div class="inlineform3-buttons">
                         <form>
-                            <button type="submit" class="btn3 button reset" style="border: 0; outline: 0;">R E S E T &nbsp;P A S S W O R D</button>
+                            <button type="submit" name='send' class="btn3 button reset" style="border: 0; outline: 0;">R E S E T &nbsp;P A S S W O R D</button>
                         </form>
                     </div>
                 </div>
@@ -45,10 +73,11 @@
     <script type="text/javascript">
         function toggle() {
             var blur = document.getElementById('blur');
-            blur.classList.toggle('active'); 
+            blur.classList.toggle('active');
             var popupforgot = document.getElementById('popupforgot');
             popupforgot.classList.toggle('active');
         }
     </script>
 </body>
+
 </html>
