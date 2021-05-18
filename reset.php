@@ -15,6 +15,8 @@ if (!isset($_GET['hc'])) {
 if (isset($_POST['send'])) {
     $check = $user->resetPassword($_POST['password'], $email);
     if ($check == true) {
+        $user->logout();
+        session_start();
         $_SESSION['tempmsg'] = "Berhasil ubah password";
         header("Location: https://" . $_SERVER['SERVER_NAME']);
         exit;
