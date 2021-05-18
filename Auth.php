@@ -158,20 +158,19 @@ class Auth
     {
         $mail = new PHPMailer(true);
         $urlcode = urlencode($code);
-        $url = "http://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO`/verifyemail.php?hc=" . $urlcode;
+        $url = "http://" . $_SERVER['SERVER_NAME'] . "/verifyemail.php?hc=" . $urlcode;
 
         try {
             $mail->SMTPDebug = 0;
             $mail->isSMTP();
-            $mail->Host       = 'mail.iamcommunity.co.id';
+            $mail->Host       = 'expo.iamcommunity.co.id';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'mail@iamcommunity.co.id';
-            $mail->Password   = '1(NEB+Q^uowN';
+            $mail->Username   = 'veryfied@expo.iamcommunity.co.id';
+            $mail->Password   = '1z!17vEIpS]R';
             $mail->SMTPSecure = 'ssl';
             $mail->Port       = 465;
-            $mail->setFrom('mail@iamcommunity.co.id', 'I Am Community');
+            $mail->setFrom('veryfied@expo.iamcommunity.co.id', 'I Am Community');
             $mail->addAddress($rec_email);
-
             ini_set('max_execution_time', 120);
             $mail->isHTML(true);
             $mail->Subject = "Verifikasi email kamu untuk melanjutkan pendaftaran.";
@@ -765,18 +764,18 @@ class Auth
     {
         $mail = new PHPMailer(true);
         $urlcode = urlencode($kode);
-        $url = "http://" . $_SERVER['SERVER_NAME'] . "/IAMCOMMUNITYEXPO/resetpassword.php?hc=" . $urlcode;
+        $url = "http://" . $_SERVER['SERVER_NAME'] . "/resetpassword.php?hc=" . $urlcode;
 
         try {
             $mail->SMTPDebug = false;
             $mail->isSMTP();
-            $mail->Host       = 'mail.iamcommunity.co.id';
+            $mail->Host       = 'expo.iamcommunity.co.id';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'mail@iamcommunity.co.id';
-            $mail->Password   = '1(NEB+Q^uowN';
+            $mail->Username   = 'veryfied@expo.iamcommunity.co.id';
+            $mail->Password   = '1z!17vEIpS]R';
             $mail->SMTPSecure = 'ssl';
             $mail->Port       = 465;
-            $mail->setFrom('mail@iamcommunity.co.id', 'I Am Community');
+            $mail->setFrom('veryfied@expo.iamcommunity.co.id', 'I Am Community');
             $mail->addAddress($email);
 
             ini_set('max_execution_time', 120);
@@ -1286,7 +1285,11 @@ class Auth
             $prep = $this->db->prepare($sql2);
             $prep->execute([$kode]);
             $res = $prep->fetch(PDO::FETCH_ASSOC);
-            $email = $res['email'];
+            if ($res != false) {
+                $email = $res['email'];
+            } else {
+                return false;
+            }
             return $email;
         } catch (PDOException $error) {
             $this->errormsg = $error->getMessage();
