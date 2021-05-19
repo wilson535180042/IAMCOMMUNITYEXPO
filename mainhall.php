@@ -25,6 +25,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
+
 <head>
   <title>Main Hall</title>
   <meta charset="utf-8">
@@ -32,10 +33,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
   <link href="css/landing.css" rel="stylesheet" type="text/css">
   <script defer src="js/script.js"></script>
 </head>
+
 <body>
-  <div class="blur" id="blur" style="background-image: url('/images/MH.jpg')">
-    <button class="home" onclick="document.location='landinglogin.html'"></button>
-    <button class="next" onclick="document.location='mainhall2.html'"></button>
+  <div class="blur" id="blur" style="background-image: url('images/MH.jpg')">
+    <button class="home" onclick="document.location='landinglogin.php'"></button>
+    <button class="next" onclick="document.location='mainhall2.php'"></button>
     <button class="btn-b1" onclick="toggle(1)"></button>
     <button class="btn-b2" onclick="toggle(2)"></button>
     <button class="btn-b3" onclick="toggle(3)"></button>
@@ -56,21 +58,23 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         Jl. Let. Jend. S. Parman Kav. 28<br>
         Jakarta 11470 Indonesia</h3>
       <h4>-</h4>
-      <a href="https://agungpodomoroland.com/"><h5>www.agungpodomoroland.com</h5></a>
+      <a href="https://agungpodomoroland.com/">
+        <h5>www.agungpodomoroland.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-      in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-      property development model, from land acquisition and/or sourcing, to design and development, to project management,
-      sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-      offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-      quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
+        property development model, from land acquisition and/or sourcing, to design and development, to project management,
+        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
+        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
+        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
     </div>
   </div>
   <div id="popup2">
@@ -88,21 +92,23 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         Penthouse Floor<br>
         Jl Jendral Sudirman 32, Jakarta 10220</h3>
       <h4>-</h4>
-      <a href="https://www.intiland.com/"><h5>www.intiland.com</h5></a>
+      <a href="https://www.intiland.com/">
+        <h5>www.intiland.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth2.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth2.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>Intiland siap melayani kebutuhan hidup masyarakat Indonesia dengan menyediakan tempat tinggal, 
-        gedung perkantoran, ritel, kawasan industri, dan masih banyak lagi. Berbagai gedung ikonis telah 
-        Intiland kembangkan, seperti Intiland Tower yang dirancang oleh arsitek kenamaan Paul Rudolph, 
-        serta kondominium tepi pantai Regatta dan perkantoran terpadu South Quarter yang merupakan hasil 
-        karya Tom Wright, arsitek Burj Al Arab. Intiland juga telah membangun beberapa kawasan pemukiman 
-        prestisius dan ramah lingkungan di kota-kota besar seperti Jakarta dan Surabaya untuk Anda yang 
+      <p>Intiland siap melayani kebutuhan hidup masyarakat Indonesia dengan menyediakan tempat tinggal,
+        gedung perkantoran, ritel, kawasan industri, dan masih banyak lagi. Berbagai gedung ikonis telah
+        Intiland kembangkan, seperti Intiland Tower yang dirancang oleh arsitek kenamaan Paul Rudolph,
+        serta kondominium tepi pantai Regatta dan perkantoran terpadu South Quarter yang merupakan hasil
+        karya Tom Wright, arsitek Burj Al Arab. Intiland juga telah membangun beberapa kawasan pemukiman
+        prestisius dan ramah lingkungan di kota-kota besar seperti Jakarta dan Surabaya untuk Anda yang
         menyukai kenyamanan hidup berkelas. </p>
     </div>
   </div>
@@ -121,13 +127,15 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         Jl. Jenderal Sudirman Kav. 1<br>
         Jakarta Pusat 10220, Indonesia</h3>
       <h4>-</h4>
-      <a href="https://www.bni.co.id/"><h5>www.bni.co.id</h5></a>
+      <a href="https://www.bni.co.id/">
+        <h5>www.bni.co.id</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth3.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth3.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>Sejak berdiri pada tahun 1946, BNI
@@ -151,15 +159,17 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
       <h3>Jakarta,<br>
-      Indonesia</h3>
+        Indonesia</h3>
       <h4>ghita@ghitautoyo.com</h4>
-      <a href="https://ghitautoyo.com/"><h5>www.ghitautoyo.com</h5></a>
+      <a href="https://ghitautoyo.com/">
+        <h5>www.ghitautoyo.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth4.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth4.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>An independent Consultant and Trainer Matrix, focus on custom Design People Development Program,
@@ -170,4 +180,5 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
   </div>
 </body>
+
 </html>

@@ -25,6 +25,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
+
 <head>
   <title>Main Hall</title>
   <meta charset="utf-8">
@@ -32,11 +33,12 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
   <link href="css/landing.css" rel="stylesheet" type="text/css">
   <script defer src="js/script.js"></script>
 </head>
+
 <body>
-  <div class="blur" id="blur" style="background-image: url('/images/MH2.jpg')">
-    <button class="home" onclick="document.location='landinglogin.html'"></button>
-    <button class="next" onclick="document.location='mainhall3.html'"></button>
-    <button class="previous" onclick="document.location='mainhall.html'"></button>
+  <div class="blur" id="blur" style="background-image: url('images/MH2.jpg')">
+    <button class="home" onclick="document.location='landinglogin.php'"></button>
+    <button class="next" onclick="document.location='mainhall3.php'"></button>
+    <button class="previous" onclick="document.location='mainhall.php'"></button>
     <button class="btn-b1" onclick="toggle(1)"></button>
     <button class="btn-b2" onclick="toggle(2)"></button>
     <button class="btn-b3" onclick="toggle(3)"></button>
@@ -57,13 +59,15 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         Lt. 16/F, Jl. Jend. sudirman kav 52-53<br>
         South Jakarta City, Jakarta 12190</h3>
       <h4>-</h4>
-      <a href="https://agungpodomoroland.com/"><h5>www.agungpodomoroland.com</h5></a>
+      <a href="https://agungpodomoroland.com/">
+        <h5>www.agungpodomoroland.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth13.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth13.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p> Fueled by ideas, expertise and
@@ -84,21 +88,23 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img4" src="images/LOC.png">
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
-      <h3>MNC Tower, Jl. Kebon Sirih,<br> 
-        RT.15/RW.7, Kb. Sirih, Kec. Menteng,<br> 
+      <h3>MNC Tower, Jl. Kebon Sirih,<br>
+        RT.15/RW.7, Kb. Sirih, Kec. Menteng,<br>
         Kota Jakarta Pusat, 10340</h3>
       <h4>-</h4>
-      <a href="https://kapalapiglobal.com/santos/?lang=id"><h5>Website Santos Jaya Abadi</h5></a>
+      <a href="https://kapalapiglobal.com/santos/?lang=id">
+        <h5>Website Santos Jaya Abadi</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth6.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth6.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf" style="font-size: 5px">
       <p>We aim to achieve the sustainable market leadership position by delivering excellent value to our customers through continuous innovation, world-class processes, financial strength, and great people.<br><br>
-        PT Santos Jaya Abadi is one of the biggest coffee roasting company in South East Asia. from 80 years experience of roasting coffee, tasting coffee, and finding the best coffee from Indonesia as well as other parts of the world. We are proud to offer some of the world finest whole beans coffee available worldwide.<br> 
+        PT Santos Jaya Abadi is one of the biggest coffee roasting company in South East Asia. from 80 years experience of roasting coffee, tasting coffee, and finding the best coffee from Indonesia as well as other parts of the world. We are proud to offer some of the world finest whole beans coffee available worldwide.<br>
       </p>
     </div>
   </div>
@@ -113,17 +119,19 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img4" src="images/LOC.png">
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
-      <h3>Plaza 89 lantai 12 suite 22-23,<br> 
+      <h3>Plaza 89 lantai 12 suite 22-23,<br>
         Jl. H. R. Rasuna Said No.6, Kuningan,<br>
         South Jakarta City, Jakarta 12940</h3>
       <h4>-</h4>
-      <a href="https://pigijo.com/"><h5>www.pigijo.com</h5></a>
+      <a href="https://pigijo.com/">
+        <h5>www.pigijo.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth7.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth7.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>PT Tourindo Guide Indonesia Tbk, Pigijo merupakan perusahaan startup
@@ -146,16 +154,18 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
       <h3>Yummy Corp HQ.<br>
-        Foresta Business Loft 2, Units 3-5.<br> 
+        Foresta Business Loft 2, Units 3-5.<br>
         Tangerang, Banten 15339</h3>
       <h4>cs@yummybox.id</h4>
-      <a href="https://www.yummybox.id/"><h5>www.yummybox.id</h5></a>
+      <a href="https://www.yummybox.id/">
+        <h5>www.yummybox.id</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth8.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth8.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="video">
       <div class="embed-responsive embed-responsive-21by9">
@@ -164,4 +174,5 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     </div>
   </div>
 </body>
+
 </html>

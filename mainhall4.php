@@ -25,6 +25,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
+
 <head>
   <title>Main Hall</title>
   <meta charset="utf-8">
@@ -32,11 +33,12 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
   <link href="css/landing.css" rel="stylesheet" type="text/css">
   <script defer src="js/script.js"></script>
 </head>
+
 <body>
-  <div class="blur" id="blur" style="background-image: url('/images/MH4.jpg')">
-    <button class="home" onclick="document.location='landinglogin.html'"></button>
+  <div class="blur" id="blur" style="background-image: url('images/MH4.jpg')">
+    <button class="home" onclick="document.location='landinglogin.php'"></button>
     <button class="next"></button>
-    <button class="previous" onclick="document.location='mainhall2.html'"></button>
+    <button class="previous" onclick="document.location='mainhall2.php'"></button>
     <button class="btn-b1" onclick="toggle(1)"></button>
     <button class="btn-b2" onclick="toggle(2)"></button>
     <button class="btn-b3" onclick="toggle(3)"></button>
@@ -58,18 +60,20 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         2nd Floor, Jl. Jenderal Sudirman 32 <br>
         Jakarta 10220, Indonesia</h3>
       <h4>investoranakmuda@gmail.com</h4>
-      <a href="https://iamcommunity.co.id/"><h5>www.iamcommunity.co.id</h5></a>
+      <a href="https://iamcommunity.co.id/">
+        <h5>www.iamcommunity.co.id</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth9.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth9.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>I AM Community atau Investor Anak Muda Community merupakan sebuah komunitas yang diperuntukkan khususnya bagi anak muda yang berfokus pada edukasi, motivasi, pengembangan diri, dan investasi khususnya di dunia properti. 
-        I AM Community memiliki tugas untuk memotivasi dan memberikan pemahaman bagi banyak orang di luar sana agar sadar dan paham mengenai pentingnya investasi melalui edukasi di sosial media, seminar, atau melalui workshop yang diadakan dengan para narasumber terpercaya di bidangnya dengan konsep "fun" atau menyenangkan. 
-        </p>
+      <p>I AM Community atau Investor Anak Muda Community merupakan sebuah komunitas yang diperuntukkan khususnya bagi anak muda yang berfokus pada edukasi, motivasi, pengembangan diri, dan investasi khususnya di dunia properti.
+        I AM Community memiliki tugas untuk memotivasi dan memberikan pemahaman bagi banyak orang di luar sana agar sadar dan paham mengenai pentingnya investasi melalui edukasi di sosial media, seminar, atau melalui workshop yang diadakan dengan para narasumber terpercaya di bidangnya dengan konsep "fun" atau menyenangkan.
+      </p>
     </div>
   </div>
   <div id="popup2">
@@ -88,7 +92,9 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         2nd Floor, Jl. Jenderal Sudirman 32 <br>
         Jakarta 10220, Indonesia</h3>
       <h4>investoranakmuda@gmail.com</h4>
-      <a href="https://iamcommunity.co.id/"><h5>www.iamcommunity.co.id</h5></a>
+      <a href="https://iamcommunity.co.id/">
+        <h5>www.iamcommunity.co.id</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>O U R &nbsp;P R O J E C T S</p>
@@ -114,13 +120,15 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         2nd Floor, Jl. Jenderal Sudirman 32 <br>
         Jakarta 10220, Indonesia</h3>
       <h4>investoranakmuda@gmail.com</h4>
-      <a href="https://iamcommunity.co.id/"><h5>www.iamcommunity.co.id</h5></a>
+      <a href="https://iamcommunity.co.id/">
+        <h5>www.iamcommunity.co.id</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>O U R &nbsp;P O R T O F O L I O</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth3.html"><button type="submit" class="boton tonbo">L E A R N &nbsp;M O R E</button></a>
+      <a href="booth3.php"><button type="submit" class="boton tonbo">L E A R N &nbsp;M O R E</button></a>
     </div>
     <div class="paragraf">
       <p>Apartemen Aeropolis yang terletak di Jl. Kp. Sekarwangi, Tangerang ini, memiliki 2 kamar tidur dan 1 kamar mandi. Apartemen yang memiliki luas 36 m2 ini juga dilengkapi dengan fasilitas kolam renang, kolam renang anak, gym center, jogging track, taman bermain, area parkir, foodcourt, restoran, minimarket, 24 jam fasilitas keamanan, resepsionis,  ATM center, laundry, dan TV Cable.
@@ -143,7 +151,9 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         2nd Floor, Jl. Jenderal Sudirman 32 <br>
         Jakarta 10220, Indonesia</h3>
       <h4>investoranakmuda@gmail.com</h4>
-      <a href="https://iamcommunity.co.id/"><h5>www.iamcommunity.co.id</h5></a>
+      <a href="https://iamcommunity.co.id/">
+        <h5>www.iamcommunity.co.id</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>O U R &nbsp;P R O D U C T</p>
@@ -151,14 +161,15 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     <div class="inlineform-buttons">
       <button class="btnspecial" id="special" onclick="puggle()"></button>
       <div class="photo_wrap">
-        <img class="iambeauty_img" src="/images/IAMB1.jpeg">
-        <img class="iambeauty_img" src="/images/IAMB2.jpeg">
-        <img class="iambeauty_img" src="/images/IAMB3.jpeg">
-        <img class="iambeauty_img" src="/images/IAMB4.jpeg">
-        <img class="iambeauty_img" src="/images/IAMB5.jpeg">
-        <img class="iambeauty_img" src="/images/IAMB6.jpeg">
+        <img class="iambeauty_img" src="images/IAMB1.jpeg">
+        <img class="iambeauty_img" src="images/IAMB2.jpeg">
+        <img class="iambeauty_img" src="images/IAMB3.jpeg">
+        <img class="iambeauty_img" src="images/IAMB4.jpeg">
+        <img class="iambeauty_img" src="images/IAMB5.jpeg">
+        <img class="iambeauty_img" src="images/IAMB6.jpeg">
       </div>
     </div>
   </div>
 </body>
+
 </html>

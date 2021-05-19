@@ -49,7 +49,7 @@ if (isset($_POST['sendforgot'])) {
         </div>
     <?php } ?>
     <!--LANDING-->
-    <<<<<<< Updated upstream:forgot.html <div class="wrapper1" id="blur">
+    <<<<<<< Updated upstream:forgot.php <div class="wrapper1" id="blur">
         <div class="btn-wrapper">
             <button class="btn-login" onclick="toggle()">LOGIN</button>
             <button class="btn-mainhall">MAIN HALL</button>
@@ -81,7 +81,7 @@ if (isset($_POST['sendforgot'])) {
                                 <label class="text-white mt-3 mb-3">Kami akan mengirimkan instruksi untuk mereset password, mohon cek email anda</label>
                             </div>
                             <form>
-                                <<<<<<< Updated upstream:forgot.html <button type="submit" class="btn3 button reset">R E S E T &nbsp;P A S S W O R D</button>
+                                <<<<<<< Updated upstream:forgot.php <button type="submit" class="btn3 button reset">R E S E T &nbsp;P A S S W O R D</button>
                                     =======
                                     <button type="submit" class="btn3 button reset" name='sendforgot' style="border: 0; outline: 0;">R E S E T &nbsp;P A S S W O R D</button>
                                     >>>>>>> Stashed changes:forgot.php
