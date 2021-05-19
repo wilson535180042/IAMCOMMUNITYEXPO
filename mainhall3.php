@@ -25,7 +25,6 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
-
 <head>
   <title>Main Hall</title>
   <meta charset="utf-8">
@@ -33,12 +32,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
   <link href="css/landing.css" rel="stylesheet" type="text/css">
   <script defer src="js/script.js"></script>
 </head>
-
 <body>
-  <div class="blur" id="blur" style="background-image: url('images/MH3.jpg')">
-    <button class="home" onclick="document.location='landinglogin.php'"></button>
-    <button class="next"></button>
-    <button class="previous" onclick="document.location='mainhall2.php'"></button>
+  <div class="blur" id="blur" style="background-image: url('/images/MH3.jpg')">
+    <button class="home" onclick="document.location='landinglogin.html'"></button>
+    <button class="next" onclick="document.location='mainhall4.html'"></button>
+    <button class="previous" onclick="document.location='mainhall2.html'"></button>
     <button class="btn-b1" onclick="toggle(1)"></button>
     <button class="btn-b2" onclick="toggle(2)"></button>
     <button class="btn-b3" onclick="toggle(3)"></button>
@@ -48,34 +46,31 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     <button class="btnspecial" id="special" onclick="puggle()"></button>
     <img class="img1" src="images/POP.png">
     <img class="img2" src="images/UP.png">
-    <img class="img3" src="images/YMY.png">
+    <img class="img3" src="images/CSG.png">
     <div class="co-name">
-      <h1><b>Yummy Box</b></h1>
+      <h1><b>CSG Indonesia</b></h1>
       <h2>@Career Expo</h2>
       <img class="img4" src="images/LOC.png">
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
-      <h3>Yummy Corp HQ.<br>
-        Foresta Business Loft 2, Units 3-5.<br>
-        Tangerang, Banten 15339</h3>
-      <h4>cs@yummybox.id</h4>
-      <a href="https://www.yummybox.id/">
-        <h5>www.yummybox.id</h5>
-      </a>
+      <h3>Jakarta,<br>
+      Indonesia</h3>
+      <h4>info@csgindonesia.com</h4>
+      <a href="https://csgindonesia.com/"><h5>www.csgindonesia.com</h5></a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth9.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth9.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-        property development model, from land acquisition and/or sourcing, to design and development, to project management,
-        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+      <p>Corporate Secretarial services can help guide you through the challenges
+        and changes, easing your administrative burden and allowing you to
+        focus on running your business. From basic to strategic compliances,
+        administrative to advisory services. From raw data to annual reports and
+        sustainability reports. General meetings or public exposes. As well
+        preparing for IPO to any corporate actions.</p>
     </div>
   </div>
   <div id="popup2">
@@ -93,89 +88,73 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         RT 7/RW 3, Grogol Petamburan,<br>
         Jakarta Barat 11470</h3>
       <h4>Info@Smileconsultingindonesia.com</h4>
-      <a href="https://smileconsultingindonesia.com/">
-        <h5>www.smileconsultingindonesia.com</h5>
-      </a>
+      <a href="https://smileconsultingindonesia.com/"><h5>www.smileconsultingindonesia.com</h5></a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth10.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth10.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-        property development model, from land acquisition and/or sourcing, to design and development, to project management,
-        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+      <p>Smile Consulting Indonesia
+        adalah Bisnis Unit dari PT.
+        Mitra Solusi Jakarta. Berdiri sejak tahun 2013 -
+        Saat ini. Pengembangan Psikotes
+        Online dimulai pada tahun
+        2017 - Saat ini</p>
     </div>
   </div>
   <div id="popup3">
     <button class="btnspecial" id="special" onclick="puggle()"></button>
     <img class="img1" src="images/POP.png">
     <img class="img2" src="images/UP.png">
-    <img class="img3" src="images/PGJO.png">
+    <img class="img3" src="images/INTW.png">
     <div class="co-name">
-      <h1><b>Summarecon</b></h1>
+      <h1><b>Intiwhiz International</b></h1>
       <h2>@Career Expo</h2>
       <img class="img4" src="images/LOC.png">
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
-      <h3>Plaza Summarecon<br>
-        Jl.Perintis Kemerdekaan No. 42<br>
-        Pulo Gadung, Jakarta Timur 13210</h3>
-      <h4>imail@gmail.com</h4>
-      <h5>www.agungpodmoro.com</h5>
+      <h3>Intiland Tower M2 Floor<br>
+        Jalan Jendral Sudirman 32<br>
+        Jakarta 10220, Indonesia</h3>
+      <h4>salesmarketing@intiwhiz.com</h4>
+      <h5>www.intiwhiz.com</h5>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth3.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth11.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-        property development model, from land acquisition and/or sourcing, to design and development, to project management,
-        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+      <p>As our identity and characteristics of our brand, we have 6 (six) core attributes as core values, brand attributes 
+        that to be used represents the essence of our brand, Intiwhiz Hospitality Management. And also the core attributes 
+        of Intiwhiz can be found at all of our hotels. Easy Access, Good Sleep, Good Shower, Info Connectivity, Stylish & Modern,
+        and Friendly & Run</p>
     </div>
   </div>
   <div id="popup4">
     <button class="btnspecial" id="special" onclick="puggle()"></button>
     <img class="img1" src="images/POP.png">
     <img class="img2" src="images/UP.png">
-    <img class="img3" src="images/CSG.png">
+    <img class="img3" src="images/SAKA.png">
     <div class="co-name">
-      <h1><b>Testing Koshong</b></h1>
+      <h1><b>Saka</b></h1>
       <h2>@Career Expo</h2>
-      <img class="img4" src="images/LOC.png">
-      <img class="img5" src="images/MAIL.png">
-      <img class="img6" src="images/WEB.png">
-      <h3>Plaza Summarecon<br>
-        Jl.Perintis Kemerdekaan No. 42<br>
-        Pulo Gadung, Jakarta Timur 13210</h3>
-      <h4>imail@gmail.com</h4>
-      <h5>www.agungpodmoro.com</h5>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth4.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth12.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-        in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-        property development model, from land acquisition and/or sourcing, to design and development, to project management,
-        sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-        offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-        quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
+      <p>Saka merupakan sebuah startup yang mendirikan platform berbasis mobile apps untuk menjembatani acara komunitas, 
+        swasta maupun pemerintah dengan para volunteer terutama dari kampus atau mahasiswa
+      </p>
     </div>
   </div>
 </body>
-
 </html>

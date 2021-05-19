@@ -79,43 +79,30 @@ body {
 
 #popup,
 #popupdescri,
-#popupdescri15,
-#popupdescri16,
-#popupdescri17,
-#popupdescri18,
-#popupdescri19,
-#popupdescri20,
-#popupdescri21,
-#popupdescri22,
-#popupdescri23,
-#popupdescri24,
 #popupdescri2,
 #popupdescri3,
+#popupdescri4,
+#popupdescri5,
+#popupdescri6,
+#popupdescri7,
 #popupregis {
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 #popup.active,
 #popupdescri.active,
-#popupdescri15.active,
-#popupdescri16.active,
-#popupdescri17.active,
-#popupdescri18.active,
-#popupdescri19.active,
-#popupdescri20.active,
-#popupdescri21.active,
-#popupdescri22.active,
-#popupdescri23.active,
-#popupdescri24.active,
 #popupdescri2.active,
 #popupdescri3.active,
+#popupdescri4.active,
+#popupdescri5.active,
+#popupdescri6.active,
+#popupdescri7.active,
 #popupregis.active {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.5s;
-  bottom: 0px;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .inlineform-buttons {

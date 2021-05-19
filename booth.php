@@ -78,12 +78,14 @@ $error = $user->getError();
     </div>
     <div class="inlineform-buttons">
       <button type="button" class="boton tonbo" onclick="toggle(10)">
-        <h1>I T &nbsp;D I V I S I O N</h1>
-        <p>front end developer</p>
+        <h1>SALES EXECUTIVE</h1>
+        <p>Agung Podomoro Land</p>
+      </button>
+      <button type="button" class="boton2 tonbo" onclick="toggle(11)">
+        <h1>QUANTITY SURVEYOR STRUCTURE AND ARCHITECT</h1>
+        <p>Agung Podomoro Land</p>
       </button>
     </div>
-
-
   </div>
 
   <div id="popupregis">
@@ -99,17 +101,11 @@ $error = $user->getError();
       <p>C O N T A C T &nbsp;U S</p>
     </div>
     <div class="kalimat">
-      <p>We facilitate ZOOM Meetings with the company you desire, click button to start!</p>
+      <p>We facilitate Meetings with the company you desire, click button to start!</p>
     </div>
     <div class="inlineform-buttons">
       <button type="button" class="botonc tonboc">
-        <h1>MARKETTING<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc2 tonboc">
-        <h1>IT & WEBSITE<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc3 tonboc">
-        <h1>SOCIAL MEDIA<br>DIVISION</h1>
+        <h1>SEND<br>EMAIL</h1>
       </button>
     </div>
   </div>
@@ -132,13 +128,29 @@ $error = $user->getError();
           <p>A P P L Y</p>
         </button>
         <div class="paragrafs">
-          <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-            in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-            property development model, from land acquisition and/or sourcing, to design and development, to project management,
-            sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-            offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-            quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
-        </div>
+      <p>Requirements:
+      <ul>
+        <li>Possess at least a Diploma III’s Degree or Bachelor’s Degree, from any major Study Program, from accredited universities.</li>
+        <li>Courage in selling high-end property products, from well-known property development companies.</li>
+        <li>Having physically fit condition, age between 25 to 28 years.</li>
+        <li>Prioritized on managing up-to-date prospective customer databases for high-end property products.</li>
+        <li>Having mature interpersonal communication skills, good personal grooming and appearance, strong persuasion, and negotiation skills to support their success in approaching, attracting, and closing customers.</li>
+        <li>Dynamic and high self-drives to achieve success, always oriented towards achieving predetermined sales targets, taking initiative, and having good work endurance.</li>
+        <li>The company provides attractive incentives, on-time commissions, rewards for top sales, and year-end bonuses to reward work performance, as well as allowances in the form of health insurance, BPJS Ketenagakerjaan, and BPJS Kesehatan.</li>
+        <li>Willing to be placed in all Agung Podomoro projects in the Jabodetabek area.</li>
+      </ul>
+    </p>
+  </div>
+  <div class="paragrafs2">
+    <p>
+        Responsibilities:<ul>
+          <li>Selling property products by prospecting and presenting products to targeted customers or institutions, so that sales targets are achieved through marketing activities.</li>
+          <li>Maintaining good relationships with customers, up to the after-sales stage.</li>
+          <li>Manage all feedback from customers, related to product quality and its services.</li>
+          <li>Conducting competitor surveys and other external party activities to obtain accurate data for product development.</li>
+          <li>Provide periodic performance reports to the Head of Sales Section.</li>
+    </p>
+  </div>
         <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
           <button type="submit" class="botond2 tonbod" name="save">
             <p>S A V E</p>
@@ -152,6 +164,110 @@ $error = $user->getError();
       </form>
     </div>
 
+    <div id=<?= "popupdescri"; ?>>
+    <?php $p = 1;
+    $k = 1; ?>
+    <button class="btnspecial" id="special" onclick="puggle()"></button>
+    <img class="img1" src="images/JV.png">
+    <img class="img2" src="images/JV2.png">
+    <img class="img3" src="images/LOGO.png">
+    <div class="biodata">
+      <p>J O B &nbsp;D E S C R I P T I O N</p>
+    </div>
+    <div class="inlineform-buttons">
+      <form method='post' method='post'>
+        <input type='hidden' name="idloker" value=<?= $k ?>>
+        <button type="submit" class="botond tonbod" onclick="toggle(13)">
+          <p>A P P L Y</p>
+        </button>
+        <div class="paragrafs">
+      <p>Requirements:
+        <ul>
+          <li>Possess at least a Bachelor’s Degree, from Civil Engineering or Architecture Study Program, from accredited universities, with minimum GPA: 3.00.</li>
+          <li>Having a minimum of 3 years of working experience in a QS Structure and Architect position, especially in a township or landed house projects at well-known property development companies or QS consultants.</li>
+          <li>Having physically fit condition, age between 25 to 30 years.</li>
+          <li>Having knowledge and experience related to building construction management and structural codes with national and international standards.</li>
+          <li>Willing to be placed in Kota Podomoro, Bogor Regency, West Java.</li>
+        </ul>
+      </p>
+    </div>
+    <div class="paragrafs2">
+      <p>Responsibilities:
+        <ul>
+          <li>Coordinating with the planning & design department to ensure the working drawing of the building and area.</li>
+          <li>Calculating the quantity of material required by the project, relates to the working drawings.</li>
+          <li>Collecting up-date material price lists relate to predetermined specifications.</li>
+          <li>Negotiating with suppliers and contractors regarding the unit price of material and the price package for the implementation of the work.</li>
+          <li>Controlling the project budget related to added and less work, including monitoring invoice bills.</li>
+          <li>Provide periodic performance reports to the Head of Quantity Surveyor Department.</li>
+        </ul>
+      </p>
+    </div>
+        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
+          <button type="submit" class="botond2 tonbod" name="save">
+            <p>S A V E</p>
+          </button>
+        <?php else :
+        ?>
+          <button type="submit" class="botond2 tonbod" name="remove">
+            <p>R E M O V E </p>
+          </button>
+        <?php endif; ?>
+      </form>
+    </div>
+
+    <div id=<?= "popupdescri2"; ?>>
+    <?php $p = 1;
+    $k = 1; ?>
+    <button class="btnspecial" id="special" onclick="puggle()"></button>
+    <img class="img1" src="images/JV.png">
+    <img class="img2" src="images/JV2.png">
+    <img class="img3" src="images/LOGO.png">
+    <div class="biodata">
+      <p>J O B &nbsp;D E S C R I P T I O N</p>
+    </div>
+    <div class="inlineform-buttons">
+      <form method='post' method='post'>
+        <input type='hidden' name="idloker" value=<?= $k ?>>
+        <button type="submit" class="botond tonbod" onclick="toggle(13)">
+          <p>A P P L Y</p>
+        </button>
+        <div class="paragrafs">
+      <p>Requirements:
+      <ul>
+        <li>Possess at least a Diploma III’s Degree or Bachelor’s Degree, from any major Study Program, from accredited universities.</li>
+        <li>Courage in selling high-end property products, from well-known property development companies.</li>
+        <li>Having physically fit condition, age between 25 to 28 years.</li>
+        <li>Prioritized on managing up-to-date prospective customer databases for high-end property products.</li>
+        <li>Having mature interpersonal communication skills, good personal grooming and appearance, strong persuasion, and negotiation skills to support their success in approaching, attracting, and closing customers.</li>
+        <li>Dynamic and high self-drives to achieve success, always oriented towards achieving predetermined sales targets, taking initiative, and having good work endurance.</li>
+        <li>The company provides attractive incentives, on-time commissions, rewards for top sales, and year-end bonuses to reward work performance, as well as allowances in the form of health insurance, BPJS Ketenagakerjaan, and BPJS Kesehatan.</li>
+        <li>Willing to be placed in all Agung Podomoro projects in the Jabodetabek area.</li>
+      </ul>
+    </p>
+  </div>
+  <div class="paragrafs2">
+    <p>
+        Responsibilities:<ul>
+          <li>Selling property products by prospecting and presenting products to targeted customers or institutions, so that sales targets are achieved through marketing activities.</li>
+          <li>Maintaining good relationships with customers, up to the after-sales stage.</li>
+          <li>Manage all feedback from customers, related to product quality and its services.</li>
+          <li>Conducting competitor surveys and other external party activities to obtain accurate data for product development.</li>
+          <li>Provide periodic performance reports to the Head of Sales Section.</li>
+    </p>
+  </div>
+        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
+          <button type="submit" class="botond2 tonbod" name="save">
+            <p>S A V E</p>
+          </button>
+        <?php else :
+        ?>
+          <button type="submit" class="botond2 tonbod" name="remove">
+            <p>R E M O V E </p>
+          </button>
+        <?php endif; ?>
+      </form>
+    </div>
 
 
 </body>

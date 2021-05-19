@@ -71,14 +71,25 @@ $error = $user->getError();
       <p>J O B &nbsp;V A C A N C I E S</p>
     </div>
     <div class="inlineform-buttons">
-      <button type="button" class="boton tonbo" onclick="toggle(10)">
-        <h1>I T &nbsp;D I V I S I O N</h1>
-        <p>front end developer</p>
+      <a href="https://glints.com/id/opportunities/jobs/digital-data-analytics/a1da7cc4-ef1f-4eb8-bb14-020f2ffb59fe">      
+      <button type="button" class="boton tonbo">
+        <h1>DIGITAL DATA ANALYTIC</h1>
+        <p>Santos Jaya Abadi</p>
       </button>
+      </a>
+      <a href="https://glints.com/id/opportunities/jobs/digital-social-media/0c536dcf-0686-45dc-92d0-04d74564f9d2">
+      <button type="button" class="boton2 tonbo">
+        <h1>DIGITAL SOCIAL MEDIA</h1>
+        <p>Santos Jaya Abadi</p>
+      </button>
+      </a>
+      <a href="https://glints.com/id/opportunities/jobs/mobile-app-developer/fda549dc-d8f2-40ee-9af1-869722f0963e">
+      <button type="button" class="boton3 tonbo">
+        <h1>MOBILE APP DEVELOPER</h1>
+        <p>Santos Jaya Abadi</p>
+      </button>
+      </a>
     </div>
-
-
-  </div>
   </div>
 
   <div id="popupregis">
@@ -94,59 +105,14 @@ $error = $user->getError();
       <p>C O N T A C T &nbsp;U S</p>
     </div>
     <div class="kalimat">
-      <p>We facilitate ZOOM Meetings with the company you desire, click button to start!</p>
+      <p>We facilitate Meetings with the company you desire, click button to start!</p>
     </div>
     <div class="inlineform-buttons">
       <button type="button" class="botonc tonboc">
-        <h1>MARKETTING<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc2 tonboc">
-        <h1>IT & WEBSITE<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc3 tonboc">
-        <h1>SOCIAL MEDIA<br>DIVISION</h1>
+        <h1>SEND<br>EMAIL</h1>
       </button>
     </div>
   </div>
-
-
-  <div id=<?= "popupdescri"; ?>>
-    <?php $p = 1;
-    $k = 1; ?>
-    <button class="btnspecial" id="special" onclick="puggle()"></button>
-    <img class="img1" src="images/JV.png">
-    <img class="img2" src="images/JV2.png">
-    <img class="img3" src="images/LOGO.png">
-    <div class="biodata">
-      <p>J O B &nbsp;D E S C R I P T I O N</p>
-    </div>
-    <div class="inlineform-buttons">
-      <form method='post' method='post'>
-        <input type='hidden' name="idloker" value=<?= $k ?>>
-        <button type="submit" class="botond tonbod" onclick="toggle(13)">
-          <p>A P P L Y</p>
-        </button>
-        <div class="paragrafs">
-          <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-            in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-            property development model, from land acquisition and/or sourcing, to design and development, to project management,
-            sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-            offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-            quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
-        </div>
-        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
-          <button type="submit" class="botond2 tonbod" name="save">
-            <p>S A V E</p>
-          </button>
-        <?php else :
-        ?>
-          <button type="submit" class="botond2 tonbod" name="remove">
-            <p>R E M O V E </p>
-          </button>
-        <?php endif; ?>
-      </form>
-    </div>
-
 </body>
 
 </html>

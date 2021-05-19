@@ -323,3 +323,22 @@
     font-size: 24px;
     font-family: Louis George Café;
 }
+
+.video {
+    position: absolute;
+    left: 872px;
+    top: 520px;
+}
+
+.iambeauty_img {
+    height: 240px;
+    width: 240px;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    position: absolute;
+}
+
+.photo_wrap {
+    padding-top: 33rem;
+    padding-left: 55rem;
+}

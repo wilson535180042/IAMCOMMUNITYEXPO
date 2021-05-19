@@ -71,14 +71,31 @@ $error = $user->getError();
       <p>J O B &nbsp;V A C A N C I E S</p>
     </div>
     <div class="inlineform-buttons">
-      <button type="button" class="boton tonbo" onclick="toggle(10)">
-        <h1>I T &nbsp;D I V I S I O N</h1>
-        <p>front end developer</p>
+      <button type="button" class="boton tonbo" onclick="toggle(3)">
+        <h1>UI/UX WRITER</h1>
+        <p>Yummy Corp</p>
+      </button>
+      <button type="button" class="boton2 tonbo" onclick="toggle(3)">
+        <h1>IT PRODUCT ASSOCIATE</h1>
+        <p>Yummy Corp</p>
+      </button>
+      <button type="button" class="boton3 tonbo" onclick="toggle(3)">
+        <h1>PARTNERSHIP ASSOCIATE</h1>
+        <p>Yummy Corp</p>
+      </button>
+      <button type="button" class="boton4 tonbo" onclick="toggle(3)">
+        <h1>MARKETING ASSOCIATE</h1>
+        <p>Yummy Corp</p>
+      </button>
+      <button type="button" class="boton5 tonbo" onclick="toggle(3)">
+        <h1>ONBOARDING LAUNCHER</h1>
+        <p>Yummy Corp</p>
+      </button>
+      <button type="button" class="boton6 tonbo" onclick="toggle(3)">
+        <h1>PEOPLE DEVELOPMENT & CULTURE</h1>
+        <p>Yummy Corp</p>
       </button>
     </div>
-
-
-  </div>
   </div>
 
   <div id="popupregis">
@@ -94,17 +111,11 @@ $error = $user->getError();
       <p>C O N T A C T &nbsp;U S</p>
     </div>
     <div class="kalimat">
-      <p>We facilitate ZOOM Meetings with the company you desire, click button to start!</p>
+      <p>We facilitate Meetings with the company you desire, click button to start!</p>
     </div>
     <div class="inlineform-buttons">
       <button type="button" class="botonc tonboc">
-        <h1>MARKETTING<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc2 tonboc">
-        <h1>IT & WEBSITE<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc3 tonboc">
-        <h1>SOCIAL MEDIA<br>DIVISION</h1>
+        <h1>SEND<br>EMAIL</h1>
       </button>
     </div>
   </div>

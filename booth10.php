@@ -94,17 +94,11 @@ $error = $user->getError();
       <p>C O N T A C T &nbsp;U S</p>
     </div>
     <div class="kalimat">
-      <p>We facilitate ZOOM Meetings with the company you desire, click button to start!</p>
+      <p>We facilitate Meetings with the company you desire, click button to start!</p>
     </div>
     <div class="inlineform-buttons">
       <button type="button" class="botonc tonboc">
-        <h1>MARKETTING<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc2 tonboc">
-        <h1>IT & WEBSITE<br>DIVISION</h1>
-      </button>
-      <button type="button" class="botonc3 tonboc">
-        <h1>SOCIAL MEDIA<br>DIVISION</h1>
+        <h1>SEND<br>EMAIL</h1>
       </button>
     </div>
   </div>

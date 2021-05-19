@@ -70,20 +70,8 @@ function toggle(bnum) {
         var popupregis = document.getElementById('popup');
         popupregis.classList.remove('active');
     }
-    if(bnum == 99){
-        var blur = document.getElementById('alert2');
-        blur.classList.toggle('active');
-        }
 
-    if (bnum >= 15) {
-        x=10;
-        var blur = document.getElementById('popupdescri'+bnum);
-        blur.classList.toggle('active');
-        var popupregis = document.getElementById('popup');
-        popupregis.classList.remove('active');
-    }
-
-        if (bnum == 11) {
+    if (bnum == 11) {
         x=10;
         var blur = document.getElementById('popupdescri2');
         blur.classList.toggle('active');
@@ -98,26 +86,69 @@ function toggle(bnum) {
         var popupregis = document.getElementById('popup');
         popupregis.classList.remove('active');
     }
+    
+    if(bnum == 99){
+        var blur = document.getElementById('alert2');
+        blur.classList.toggle('active');
+        }
 
         if (bnum == 13) {
-        x=10;
-        var blur = document.getElementById('popupregis');
-        blur.classList.toggle('active');
-        var popupregis = document.getElementById('popupdescri');
-        popupregis.classList.remove('active');
-        var popupregis = document.getElementById('popupdescri2');
-        popupregis.classList.remove('active');
-        var popupregis = document.getElementById('popupdescri3');
-        popupregis.classList.remove('active');
-    }
+            x=10;
+            var blur = document.getElementById('popupregis');
+            blur.classList.toggle('active');
+            var popupregis = document.getElementById('popupdescri');
+            popupregis.classList.remove('active');
+            var popupregis = document.getElementById('popupdescri2');
+            popupregis.classList.remove('active');
+            var popupregis = document.getElementById('popupdescri3');
+            popupregis.classList.remove('active');
+            var popupregis = document.getElementById('popupdescri4');
+            popupregis.classList.remove('active');
+            var popupregis = document.getElementById('popupdescri5');
+            popupregis.classList.remove('active');
+            var popupregis = document.getElementById('popupdescri6');
+            popupregis.classList.remove('active');
+        }
     
-    if (bnum == 14) {
-        x=14;
-        var blur = document.getElementById('popup');
-        blur.classList.toggle('active');
-        var popupregis = document.getElementById('popupcom');
-        popupregis.classList.remove('active');
-    }
+            if (bnum == 14) {
+            x=14;
+            var blur = document.getElementById('popup');
+            blur.classList.toggle('active');
+            var popupregis = document.getElementById('popupcom');
+            popupregis.classList.remove('active');
+        }
+        
+            if (bnum == 15) {
+            x=10;
+            var blur = document.getElementById('popupdescri4');
+            blur.classList.toggle('active');
+            var popupregis = document.getElementById('popup');
+            popupregis.classList.remove('active');
+        }
+    
+            if (bnum == 16) {
+            x=16;
+            var blur = document.getElementById('popupdescri5');
+            blur.classList.toggle('active');
+            var popupregis = document.getElementById('popup');
+            popupregis.classList.remove('active');
+        }
+    
+            if (bnum == 17) {
+            x=17;
+            var blur = document.getElementById('popupdescri6');
+            blur.classList.toggle('active');
+            var popupregis = document.getElementById('popup');
+            popupregis.classList.remove('active');
+        }
+    
+            if (bnum == 18) {
+            x=17;
+            var blur = document.getElementById('popupdescri7');
+            blur.classList.toggle('active');
+            var popupregis = document.getElementById('popup');
+            popupregis.classList.remove('active');
+        }
 }
 
 function puggle() {
