@@ -149,11 +149,23 @@ body {
   position: absolute;
   background-color: #fdb501;
   border: none;
-  width: 388px;
-  height: 100px;
-  left: 133px;
+  width: 400px;
+  height: 120px;
+  left: 120px;
   top: 380px;
+  border:none; 
+  outline: none;
+}
+
+.boton5 {
+  position: absolute;
+  background-color: #fdb501;
   border: none;
+  width: 400px;
+  height: 120px;
+  left: 120px;
+  top: 520px;
+  border:none; 
   outline: none;
 }
 
@@ -161,11 +173,23 @@ body {
   position: absolute;
   background-color: #fdb501;
   border: none;
-  width: 902px;
-  height: 100px;
-  left: 857.9px;
-  top: 720px;
+  width: 400px;
+  height: 120px;
+  left: 550px;
+  top: 380px;
+  border:none; 
+  outline: none;
+}
+
+.boton6 {
+  position: absolute;
+  background-color: #fdb501;
   border: none;
+  width: 400px;
+  height: 120px;
+  left: 550px;
+  top: 520px;
+  border:none; 
   outline: none;
 }
 
@@ -173,11 +197,35 @@ body {
   position: absolute;
   background-color: #fdb501;
   border: none;
-  width: 902px;
-  height: 100px;
-  left: 857.9px;
-  top: 850px;
+  width: 400px;
+  height: 120px;
+  left: 980px;
+  top: 380px;
+  border:none; 
+  outline: none;
+}
+
+.boton7 {
+  position: absolute;
+  background-color: #fdb501;
   border: none;
+  width: 400px;
+  height: 120px;
+  left: 980px;
+  top: 520px;
+  border:none; 
+  outline: none;
+}
+
+.boton4 {
+  position: absolute;
+  background-color: #fdb501;
+  border: none;
+  width: 400px;
+  height: 120px;
+  left: 1410px;
+  top: 380px;
+  border:none; 
   outline: none;
 }
 

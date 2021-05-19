@@ -123,9 +123,15 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <a href="booth3.html"><button type="submit" class="boton tonbo">L E A R N &nbsp;M O R E</button></a>
     </div>
     <div class="paragraf">
-      <p>Apartemen Aeropolis yang terletak di Jl. Kp. Sekarwangi, Tangerang ini, memiliki 2 kamar tidur dan 1 kamar mandi. Apartemen yang memiliki luas 36 m2 ini juga dilengkapi dengan fasilitas kolam renang, kolam renang anak, gym center, jogging track, taman bermain, area parkir, foodcourt, restoran, minimarket, 24 jam fasilitas keamanan, resepsionis,  ATM center, laundry, dan TV Cable.
-
-        Selain itu, Apartemen Aeropolis berada tepat di belakang bandara Soekarno-Hatta, sehingga memudahkan traveller untuk beristirahat. Apartemen Aeropolis juga dekat dengan rumah sakit, pusat perbelanjaan, sekolah, dan masih banyak lagi.</p>
+      <p>Estator merupakan platform investasi patungan properti dengan harga 
+terjangkau bagi masyarakat Indonesia. Kami sudah berhasil melaksanakan 
+investasi patungan properti perdana kami dengan dukungan dari puluhan 
+investor dengan harga start from 3 juta-an per lot. Properti Pertama 
+yang kami investasikan adalah Apartemen Aeropolis. Apartemen Aeropolis yang 
+terletak di Jl. Kp. Sekarwangi, Tangerang ini, memiliki 2 kamar tidur dan 
+1 kamar mandi. Apartemen yang memiliki luas 36 m2 ini juga dilengkapi dengan fasilitas yang lengkap. Apartement ini berada tepat di belakang bandara Soekarno-Hatta, sehingga memudahkan traveller untuk beristirahat. Apartemen Aeropolis juga dekat dengan rumah sakit, pusat perbelanjaan, sekolah, dan masih banyak lagi.
+Anda dapat bertanya langsung melalui Admin kami di nomor WhatsApp kami 
++6281808556152 atau Anda dapat mempelajari lebih lanjut melalui website kami.</p>
     </div>
   </div>
   <div id="popup4">
