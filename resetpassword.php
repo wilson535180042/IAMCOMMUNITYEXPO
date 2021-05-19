@@ -49,7 +49,7 @@ if (isset($_POST['send'])) {
 
 <body>
     <!--LANDING-->
-    <a href="landinglogin.html"><button class="btnspecial" id="special" style="border: 0; outline: 0;"></button></a>
+    <a href="landinglogin.php"><button class="btnspecial" id="special" style="border: 0; outline: 0;"></button></a>
     <div class="wrapper1" id="blur"></div>
     <!--FORGOT PASSWORD-->
     <div class="popupforgot" id="popupforgot">

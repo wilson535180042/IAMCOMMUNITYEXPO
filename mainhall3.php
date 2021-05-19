@@ -25,6 +25,7 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
 ?>
 
 <!DOCTYPE html>
+
 <head>
   <title>Main Hall</title>
   <meta charset="utf-8">
@@ -32,11 +33,12 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
   <link href="css/landing.css" rel="stylesheet" type="text/css">
   <script defer src="js/script.js"></script>
 </head>
+
 <body>
-  <div class="blur" id="blur" style="background-image: url('/images/MH3.jpg')">
-    <button class="home" onclick="document.location='landinglogin.html'"></button>
-    <button class="next" onclick="document.location='mainhall4.html'"></button>
-    <button class="previous" onclick="document.location='mainhall2.html'"></button>
+  <div class="blur" id="blur" style="background-image: url('images/MH3.jpg')">
+    <button class="home" onclick="document.location='landinglogin.php'"></button>
+    <button class="next" onclick="document.location='mainhall4.php'"></button>
+    <button class="previous" onclick="document.location='mainhall2.php'"></button>
     <button class="btn-b1" onclick="toggle(1)"></button>
     <button class="btn-b2" onclick="toggle(2)"></button>
     <button class="btn-b3" onclick="toggle(3)"></button>
@@ -54,15 +56,17 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
       <h3>Jakarta,<br>
-      Indonesia</h3>
+        Indonesia</h3>
       <h4>info@csgindonesia.com</h4>
-      <a href="https://csgindonesia.com/"><h5>www.csgindonesia.com</h5></a>
+      <a href="https://csgindonesia.com/">
+        <h5>www.csgindonesia.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth9.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth9.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>Corporate Secretarial services can help guide you through the challenges
@@ -88,13 +92,15 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
         RT 7/RW 3, Grogol Petamburan,<br>
         Jakarta Barat 11470</h3>
       <h4>Info@Smileconsultingindonesia.com</h4>
-      <a href="https://smileconsultingindonesia.com/"><h5>www.smileconsultingindonesia.com</h5></a>
+      <a href="https://smileconsultingindonesia.com/">
+        <h5>www.smileconsultingindonesia.com</h5>
+      </a>
     </div>
     <div class="biodata">
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth10.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth10.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
       <p>Smile Consulting Indonesia
@@ -126,11 +132,11 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth11.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth11.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>As our identity and characteristics of our brand, we have 6 (six) core attributes as core values, brand attributes 
-        that to be used represents the essence of our brand, Intiwhiz Hospitality Management. And also the core attributes 
+      <p>As our identity and characteristics of our brand, we have 6 (six) core attributes as core values, brand attributes
+        that to be used represents the essence of our brand, Intiwhiz Hospitality Management. And also the core attributes
         of Intiwhiz can be found at all of our hotels. Easy Access, Good Sleep, Good Shower, Info Connectivity, Stylish & Modern,
         and Friendly & Run</p>
     </div>
@@ -148,13 +154,14 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth12.html"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth12.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>Saka merupakan sebuah startup yang mendirikan platform berbasis mobile apps untuk menjembatani acara komunitas, 
+      <p>Saka merupakan sebuah startup yang mendirikan platform berbasis mobile apps untuk menjembatani acara komunitas,
         swasta maupun pemerintah dengan para volunteer terutama dari kampus atau mahasiswa
       </p>
     </div>
   </div>
 </body>
+
 </html>
