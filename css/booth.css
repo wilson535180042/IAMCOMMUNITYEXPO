@@ -336,24 +336,60 @@ body {
   letter-spacing: 1px;
 }
 
-.paragraf {
+.paragraf{
   margin-top: 7px;
   position: absolute;
 }
 
-.paragrafs {
+.paragrafs{
   margin-top: 7px;
   position: absolute;
 }
 
-.paragrafs p {
+.paragrafs p{
   width: 1600px;
   position: absolute;
   text-align: justify;
   color: white;
   left: 160px;
-  top: 400px;
+  top: 370px;
   font-size: 24px;
+  font-family: Louis George Café;
+  line-height: 25pt;
+}
+
+.paragrafs2 p{
+  width: 1600px;
+  position: absolute;
+  text-align: justify;
+  color: white;
+  left: 1050px;
+  top: 370px;
+  font-size: 24px;
+  font-family: Louis George Café;
+  line-height: 25pt;
+}
+
+.paragrafs ul{
+  width: 820px;
+  position: absolute;
+  text-align: justify;
+  color: white;
+  left: 160px;
+  top: 410px;
+  font-size: 18px;
+  font-family: Louis George Café;
+  line-height: 25pt;
+}
+
+.paragrafs2 ul{
+  width: 720px;
+  position: absolute;
+  text-align: justify;
+  color: white;
+  left: 1050px;
+  top: 410px;
+  font-size: 18px;
   font-family: Louis George Café;
   line-height: 25pt;
 }

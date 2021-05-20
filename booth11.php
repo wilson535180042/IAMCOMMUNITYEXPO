@@ -75,15 +75,15 @@ $error = $user->getError();
         <h1>MARKETING COMMUNICATION EXECUTIVE</h1>
         <p>Intiwhiz Internasional</p>
       </button>
-      <button type="button" class="boton2 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton2 tonbo" onclick="toggle(11)">
         <h1>GRAPHIC DESIGN</h1>
         <p>Intiwhiz Internasional</p>
       </button>
-      <button type="button" class="boton3 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton3 tonbo" onclick="toggle(12)">
         <h1>SALES MARKETING ADMIN</h1>
         <p>Intiwhiz Internasional</p>
       </button>
-      <button type="button" class="boton4 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton4 tonbo" onclick="toggle(15)">
         <h1>LOYALTY MEMBERSHIP OFFICER</h1>
         <p>Intiwhiz Internasional</p>
       </button>
@@ -114,6 +114,138 @@ $error = $user->getError();
 
 
   <div id=<?= "popupdescri"; ?>>
+    <?php $p = 1;
+    $k = 1; ?>
+    <button class="btnspecial" id="special" onclick="puggle()"></button>
+    <img class="img1" src="images/JV.png">
+    <img class="img2" src="images/JV2.png">
+    <img class="img3" src="images/LOGO.png">
+    <div class="biodata">
+      <p>J O B &nbsp;D E S C R I P T I O N</p>
+    </div>
+    <div class="inlineform-buttons">
+      <form method='post' method='post'>
+        <input type='hidden' name="idloker" value=<?= $k ?>>
+        <button type="submit" class="botond tonbod" onclick="toggle(13)">
+          <p>A P P L Y</p>
+        </button>
+        <div class="paragrafs">
+        <p>Requirements:
+        <ul>
+          <li>Experience Minimun 1 year in the same position</li>
+          <li>Detail oriented</li>
+          <li>Has a strong desire to be the best, enthusiastic, & energetic</li>
+          <li>Have good copywriting skills</li>
+          <li>Have outstanding analytical skills and an independent problem
+            solver</li>
+          <li>Have experience in handling social media accounts/contents</li>
+          <li>Has a good personality and attitude</li>
+          <li>Willing to travel</li>
+        </ul>
+      </p>
+        </div>
+        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
+          <button type="submit" class="botond2 tonbod" name="save">
+            <p>S A V E</p>
+          </button>
+        <?php else :
+        ?>
+          <button type="submit" class="botond2 tonbod" name="remove">
+            <p>R E M O V E </p>
+          </button>
+        <?php endif; ?>
+      </form>
+    </div>
+
+    <div id=<?= "popupdescri2"; ?>>
+    <?php $p = 1;
+    $k = 1; ?>
+    <button class="btnspecial" id="special" onclick="puggle()"></button>
+    <img class="img1" src="images/JV.png">
+    <img class="img2" src="images/JV2.png">
+    <img class="img3" src="images/LOGO.png">
+    <div class="biodata">
+      <p>J O B &nbsp;D E S C R I P T I O N</p>
+    </div>
+    <div class="inlineform-buttons">
+      <form method='post' method='post'>
+        <input type='hidden' name="idloker" value=<?= $k ?>>
+        <button type="submit" class="botond tonbod" onclick="toggle(13)">
+          <p>A P P L Y</p>
+        </button>
+        <div class="paragrafs">
+        <p>Requirements:
+        <ul>
+          <li>Experience Minimun 1 year in the same position</li>
+          <li>Detail oriented</li>
+          <li>Has a strong desire to be the best, enthusiastic, & energetic</li>
+          <li>Have good copywriting skills</li>
+          <li>Have outstanding analytical skills and an independent problem
+            solver</li>
+          <li>Have experience in handling social media accounts/contents</li>
+          <li>Has a good personality and attitude</li>
+          <li>Willing to travel</li>
+        </ul>
+      </p>
+        </div>
+        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
+          <button type="submit" class="botond2 tonbod" name="save">
+            <p>S A V E</p>
+          </button>
+        <?php else :
+        ?>
+          <button type="submit" class="botond2 tonbod" name="remove">
+            <p>R E M O V E </p>
+          </button>
+        <?php endif; ?>
+      </form>
+    </div>
+
+    <div id=<?= "popupdescri3"; ?>>
+    <?php $p = 1;
+    $k = 1; ?>
+    <button class="btnspecial" id="special" onclick="puggle()"></button>
+    <img class="img1" src="images/JV.png">
+    <img class="img2" src="images/JV2.png">
+    <img class="img3" src="images/LOGO.png">
+    <div class="biodata">
+      <p>J O B &nbsp;D E S C R I P T I O N</p>
+    </div>
+    <div class="inlineform-buttons">
+      <form method='post' method='post'>
+        <input type='hidden' name="idloker" value=<?= $k ?>>
+        <button type="submit" class="botond tonbod" onclick="toggle(13)">
+          <p>A P P L Y</p>
+        </button>
+        <div class="paragrafs">
+        <p>Requirements:
+        <ul>
+          <li>Experience Minimun 1 year in the same position</li>
+          <li>Detail oriented</li>
+          <li>Has a strong desire to be the best, enthusiastic, & energetic</li>
+          <li>Have good copywriting skills</li>
+          <li>Have outstanding analytical skills and an independent problem
+            solver</li>
+          <li>Have experience in handling social media accounts/contents</li>
+          <li>Has a good personality and attitude</li>
+          <li>Willing to travel</li>
+        </ul>
+      </p>
+        </div>
+        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
+          <button type="submit" class="botond2 tonbod" name="save">
+            <p>S A V E</p>
+          </button>
+        <?php else :
+        ?>
+          <button type="submit" class="botond2 tonbod" name="remove">
+            <p>R E M O V E </p>
+          </button>
+        <?php endif; ?>
+      </form>
+    </div>
+
+    <div id=<?= "popupdescri4"; ?>>
     <?php $p = 1;
     $k = 1; ?>
     <button class="btnspecial" id="special" onclick="puggle()"></button>

@@ -164,7 +164,7 @@ $error = $user->getError();
       </form>
     </div>
 
-    <div id=<?= "popupdescri"; ?>>
+    <div id=<?= "popupdescri2"; ?>>
     <?php $p = 1;
     $k = 1; ?>
     <button class="btnspecial" id="special" onclick="puggle()"></button>

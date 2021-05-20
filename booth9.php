@@ -72,8 +72,8 @@ $error = $user->getError();
     </div>
     <div class="inlineform-buttons">
       <button type="button" class="boton tonbo" onclick="toggle(10)">
-        <h1>I T &nbsp;D I V I S I O N</h1>
-        <p>front end developer</p>
+        <h1>C O N T A C T &nbsp;U S</h1>
+        <p>CSG Indonesia</p>
       </button>
     </div>
 
@@ -102,45 +102,6 @@ $error = $user->getError();
       </button>
     </div>
   </div>
-
-
-  <div id=<?= "popupdescri"; ?>>
-    <?php $p = 1;
-    $k = 1; ?>
-    <button class="btnspecial" id="special" onclick="puggle()"></button>
-    <img class="img1" src="images/JV.png">
-    <img class="img2" src="images/JV2.png">
-    <img class="img3" src="images/LOGO.png">
-    <div class="biodata">
-      <p>J O B &nbsp;D E S C R I P T I O N</p>
-    </div>
-    <div class="inlineform-buttons">
-      <form method='post' method='post'>
-        <input type='hidden' name="idloker" value=<?= $k ?>>
-        <button type="submit" class="botond tonbod" onclick="toggle(13)">
-          <p>A P P L Y</p>
-        </button>
-        <div class="paragrafs">
-          <p>PT Agung Podomoro Land Tbk. (APLN) is a leading integrated diversified real estate owner, developer and manager
-            in the retail, commercial, and residential real estate segments with diversified holdings. We have an integrated
-            property development model, from land acquisition and/or sourcing, to design and development, to project management,
-            sales, commercial leasing and marketing, to the operation and management of our superblock developments, shopping malls,
-            offices, hotels, and residential apartments and houses. We are known as a pioneer of the superblock development. Our high
-            quality landmark projects, to name a few are Podomoro City, Kuningan City, and Senayan City.</p>
-        </div>
-        <?php if ($loker[$p]["loker"][$k]['bookmarked'] == false) : ?>
-          <button type="submit" class="botond2 tonbod" name="save">
-            <p>S A V E</p>
-          </button>
-        <?php else :
-        ?>
-          <button type="submit" class="botond2 tonbod" name="remove">
-            <p>R E M O V E </p>
-          </button>
-        <?php endif; ?>
-      </form>
-    </div>
-
 </body>
 
 </html>

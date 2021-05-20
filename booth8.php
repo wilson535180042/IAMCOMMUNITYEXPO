@@ -71,27 +71,27 @@ $error = $user->getError();
       <p>J O B &nbsp;V A C A N C I E S</p>
     </div>
     <div class="inlineform-buttons">
-      <button type="button" class="boton tonbo" onclick="toggle(3)">
+      <button type="button" class="boton tonbo" onclick="toggle(10)">
         <h1>UI/UX WRITER</h1>
         <p>Yummy Corp</p>
       </button>
-      <button type="button" class="boton2 tonbo" onclick="toggle(3)">
+      <button type="button" class="boton2 tonbo" onclick="toggle(11)">
         <h1>IT PRODUCT ASSOCIATE</h1>
         <p>Yummy Corp</p>
       </button>
-      <button type="button" class="boton3 tonbo" onclick="toggle(3)">
+      <button type="button" class="boton3 tonbo" onclick="toggle(12)">
         <h1>PARTNERSHIP ASSOCIATE</h1>
         <p>Yummy Corp</p>
       </button>
-      <button type="button" class="boton4 tonbo" onclick="toggle(3)">
+      <button type="button" class="boton4 tonbo" onclick="toggle(15)">
         <h1>MARKETING ASSOCIATE</h1>
         <p>Yummy Corp</p>
       </button>
-      <button type="button" class="boton5 tonbo" onclick="toggle(3)">
+      <button type="button" class="boton5 tonbo" onclick="toggle(16)">
         <h1>ONBOARDING LAUNCHER</h1>
         <p>Yummy Corp</p>
       </button>
-      <button type="button" class="boton6 tonbo" onclick="toggle(3)">
+      <button type="button" class="boton6 tonbo" onclick="toggle(17)">
         <h1>PEOPLE DEVELOPMENT & CULTURE</h1>
         <p>Yummy Corp</p>
       </button>

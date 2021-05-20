@@ -75,27 +75,27 @@ $error = $user->getError();
         <h1>SALES EXECUTIVE</h1>
         <p>Intiland Jakarta</p>
       </button>
-      <button type="button" class="boton2 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton2 tonbo" onclick="toggle(11)">
         <h1>FINANCE STAFF (CASHIER)</h1>
         <p>Intiland Jakarta</p>
       </button>
-      <button type="button" class="boton3 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton3 tonbo" onclick="toggle(12)">
         <h1>PROJECT LEGAL SUPERVISOR</h1>
         <p>Intiland Jakarta</p>
       </button>
-      <button type="button" class="boton4 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton4 tonbo" onclick="toggle(15)">
         <h1>MARKETING MANAGER</h1>
         <p>Intiland Jakarta</p>
       </button>
-      <button type="button" class="boton5 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton5 tonbo" onclick="toggle(16)">
         <h1>DESIGN & SPECIFICATION STAFF</h1>
         <p>Intiland Surabaya</p>
       </button>
-      <button type="button" class="boton6 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton6 tonbo" onclick="toggle(17)">
         <h1>SALES EXECUTIVE</h1>
         <p>Intiland Surabaya</p>
       </button>
-      <button type="button" class="boton7 tonbo" onclick="toggle(10)">
+      <button type="button" class="boton7 tonbo" onclick="toggle(18)">
         <h1>ACCOUNTING STAFF</h1>
         <p>Intiland Surabaya</p>
       </button>
