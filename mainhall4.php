@@ -68,11 +68,10 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth9.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+      <a href="booth13.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>I AM Community atau Investor Anak Muda Community merupakan sebuah komunitas yang diperuntukkan khususnya bagi anak muda yang berfokus pada edukasi, motivasi, pengembangan diri, dan investasi khususnya di dunia properti.
-        I AM Community memiliki tugas untuk memotivasi dan memberikan pemahaman bagi banyak orang di luar sana agar sadar dan paham mengenai pentingnya investasi melalui edukasi di sosial media, seminar, atau melalui workshop yang diadakan dengan para narasumber terpercaya di bidangnya dengan konsep "fun" atau menyenangkan.
+      <p>PT Anak Muda Berkarya awalnya bermula dari sebuah komunitas yaitu I AM Community atau Investor Anak Muda Community yang merupakan salah satu program diluncurkan oleh perusahaan pengembang properti yaitu PT Intiland Development Tbk sebagai Corporate Social Responbility (CSR) pada November 2018. I AM Community sendiri diperuntukan bagi anak muda yang berfokus di bidang edukasi, motivasi, pengembangan diri, serta investasi khususnya di dunia properti. Seiring berjalannya waktu I AM Community berkembang pesat dan barulah dibentuk PT Anak Muda Berkarya pada tahun 2018 dan legal pada tanggal 30 Agustus 2019 dengan menjadikan I AM Community sebagai salah satu lini bisnis.
       </p>
     </div>
   </div>
@@ -125,10 +124,10 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       </a>
     </div>
     <div class="biodata">
-      <p>O U R &nbsp;P O R T O F O L I O</p>
+      <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <a href="booth3.php"><button type="submit" class="boton tonbo">L E A R N &nbsp;M O R E</button></a>
+      <a href="https://estator.co.id/"><button type="submit" class="boton tonbo">V I S I T &nbsp;U S</button></a>
     </div>
     <div class="paragraf">
       <p>Estator merupakan platform investasi patungan properti dengan harga 
@@ -143,37 +142,34 @@ Anda dapat bertanya langsung melalui Admin kami di nomor WhatsApp kami
     </div>
   </div>
   <div id="popup4">
+    <button class="btnspecial" id="special" onclick="puggle()"></button>
     <img class="img1" src="images/POP.png">
     <img class="img2" src="images/UP.png">
-    <img class="img3" src="images/IAMB.png">
+    <img class="img3" src="images/ERAA.png">
     <div class="co-name">
-      <h1><b>I AM Beauty</b></h1>
+      <h1><b>ERA Real Estate</b></h1>
       <h2>@Career Expo</h2>
       <img class="img4" src="images/LOC.png">
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
       <h3>
-        Intiland Tower<br>
-        2nd Floor, Jl. Jenderal Sudirman 32 <br>
-        Jakarta 10220, Indonesia</h3>
-      <h4>investoranakmuda@gmail.com</h4>
-      <a href="https://iamcommunity.co.id/">
-        <h5>www.iamcommunity.co.id</h5>
+      TCC Batavia Tower One<br>
+      8th Floor, Suite 3-5, Jl. K.H. Mas Mansyur No.126,<br>
+      Daerah Khusus Ibukota Jakarta 10220</h3>
+      <h4>-</h4>
+      <a href="https://www.eraindonesia.com/">
+        <h5>www.eraindonesia.com</h5>
       </a>
     </div>
     <div class="biodata">
-      <p>O U R &nbsp;P R O D U C T</p>
+      <p>C O M P A N Y &nbsp;P R O F I L E</p>
     </div>
     <div class="inlineform-buttons">
-      <button class="btnspecial" id="special" onclick="puggle()"></button>
-      <div class="photo_wrap">
-        <img class="iambeauty_img" src="images/IAMB1.jpeg">
-        <img class="iambeauty_img" src="images/IAMB2.jpeg">
-        <img class="iambeauty_img" src="images/IAMB3.jpeg">
-        <img class="iambeauty_img" src="images/IAMB4.jpeg">
-        <img class="iambeauty_img" src="images/IAMB5.jpeg">
-        <img class="iambeauty_img" src="images/IAMB6.jpeg">
-      </div>
+      <a href="booth16.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
+    </div>
+    <div class="paragraf">
+      <p>PT Anak Muda Berkarya awalnya bermula dari sebuah komunitas yaitu I AM Community atau Investor Anak Muda Community yang merupakan salah satu program diluncurkan oleh perusahaan pengembang properti yaitu PT Intiland Development Tbk sebagai Corporate Social Responbility (CSR) pada November 2018. I AM Community sendiri diperuntukan bagi anak muda yang berfokus di bidang edukasi, motivasi, pengembangan diri, serta investasi khususnya di dunia properti. Seiring berjalannya waktu I AM Community berkembang pesat dan barulah dibentuk PT Anak Muda Berkarya pada tahun 2018 dan legal pada tanggal 30 Agustus 2019 dengan menjadikan I AM Community sebagai salah satu lini bisnis.
+      </p>
     </div>
   </div>
 </body>

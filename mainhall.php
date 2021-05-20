@@ -116,19 +116,19 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
     <button class="btnspecial" id="special" onclick="puggle()"></button>
     <img class="img1" src="images/POP.png">
     <img class="img2" src="images/UP.png">
-    <img class="img3" src="images/CTRA.png">
+    <img class="img3" src="images/HUMN.png">
     <div class="co-name">
       <h1><b>Humanoria</b></h1>
       <h2>@Career Expo</h2>
       <img class="img4" src="images/LOC.png">
       <img class="img5" src="images/MAIL.png">
       <img class="img6" src="images/WEB.png">
-      <h3>Gedung Grha BNI<br>
-        Jl. Jenderal Sudirman Kav. 1<br>
-        Jakarta Pusat 10220, Indonesia</h3>
+      <h3>Gedung Prince Center<br>
+      Lantai 5 Unit 502 Jalan Jendral Sudirman No.Kav. 3-4<br>
+      Daerah Khusus Ibukota Jakarta 10250</h3>
       <h4>-</h4>
-      <a href="https://www.bni.co.id/">
-        <h5>www.bni.co.id</h5>
+      <a href="https://humanainternational.com/id/">
+        <h5>www.humanainternational.com</h5>
       </a>
     </div>
     <div class="biodata">
@@ -138,13 +138,19 @@ $bookmark = $user->getBookmark($_SESSION['userid']);
       <a href="booth3.php"><button type="submit" class="boton tonbo">V I S I T &nbsp;B O O T H</button></a>
     </div>
     <div class="paragraf">
-      <p>Sejak berdiri pada tahun 1946, BNI
-        senantiasa menjadi bagian dari dinamika
-        pembangunan perekonomian Indonesia.
-        Dalam kurun waktu lebih dari separuh abad
-        itu juga, BNI telah berkembang menjadi bank
-        nasional yang kokoh dengan pertumbuhan
-        keuangan berkelanjutan.</p>
+      <p>Filling a key position requires focused
+research, an organized approach and
+a systematic search process. We
+invest the time to understand your
+company, your values, and your
+business goals. We work with you to
+clarify your objectives and your job
+specifications. We know that
+candidates who thrive in one
+company may not necessarily thrive in
+another so we make sure that we
+have a feel for the character and
+culture of your organization.</p>
     </div>
   </div>
   <div id="popup4">
