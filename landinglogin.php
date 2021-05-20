@@ -47,7 +47,7 @@ if (isset($_SESSION['tempmsg']) && isset($_SESSION['temptype'])) {
     <div class="wrapper2" id="blur">
         <div class="btn-wrapper">
             <button class="btn-login" style="border: 0; outline: 0;" onclick="document.location='dashboard.php'"></button>
-            <button class="btn-mainhall" style="border: 0; outline: 0;" onclick="document.location='mainhall.php'"></button>
+            <button class="btn-mainhall" style="border: 0; outline: 0;" onclick="document.location='beforehall.html'"></button>
             <button class="btn-register" style="border: 0; outline: 0;" onclick="document.location='logout.php'"></button>
             <button class="btn-i" onclick="toggle(4)" style="border: 0; outline: 0;"></button>
             <button class="btn-toilet" onclick="document.location='toilet.html'" style="border: 0; outline: 0;"></button>

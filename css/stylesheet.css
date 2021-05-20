@@ -53,6 +53,33 @@
   top: 575px;
 }
 
+.btn-game1 {
+  background: transparent;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 364px;
+  top: 466px;
+}
+
+.btn-game2 {
+  background: transparent;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 871px;
+  top: 466px;
+}
+
+.btn-game3 {
+  background: transparent;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 1380px;
+  top: 466px;
+}
+
 .btn-login {
   border-radius: 10px !important;
   background: transparent;
