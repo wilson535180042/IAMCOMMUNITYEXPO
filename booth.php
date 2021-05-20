@@ -90,9 +90,9 @@ $error = $user->getError();
 
   <div id="popupregis">
     <button class="btnspecial" id="special" onclick="puggle()"></button>
-    <img class="img4" src="images/Asset 17.png">
-    <img class="img5" src="images/Asset 16.png">
-    <img class="img6" src="images/LOGO.png">
+    <img class="img4" src="img/Asset 17.png">
+    <img class="img5" src="img/Asset 16.png">
+    <img class="img6" src="img/LOGO.png">
     <div class="co-namec">
       <h1><b>Welcome to Career Expo</b></h1>
       <h2>by I AM Community</h2>
